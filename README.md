@@ -1,53 +1,39 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# LanHaoTiddy
-
-=======
-# TiddySync
-tiddy同步空间
->>>>>>> cb091bc (Initial commit)
-=======
-# TiddySync
-tiddy同步空间
-=======
 [English](/README.md) | [中文](/README_zh-CN.md)
 
 # Tiddlywiki-NodeJS-Github-Template
 
-Default wiki template for [TidGi-Desktop](https://github.com/tiddly-gittly/TidGi-Desktop), an App that can generate template wiki on one-click.
+[TidGi-Desktop](https://github.com/tiddly-gittly/TidGi-Desktop)的默认wiki模板，这是一个可以一键生成wiki模板的应用。
 
-Knowledge base Template, with advanced filter search and faceted data aggregation.
+知识库模板，具有高级过滤搜索和分面数据聚合功能。
 
-[onetwo.ren/wiki](https://onetwo.ren/wiki) is an example of this template. And [tiddly-gittly.github.io/Tiddlywiki-NodeJS-Github-Template/](https://tiddly-gittly.github.io/Tiddlywiki-NodeJS-Github-Template/) is deployed example of this repo. (There are some optimization to make this demo readonly, and being not downloadable, so its size is almost as small as a GIF picture.)
+[onetwo.ren/wiki](https://onetwo.ren/wiki)是这个模板的一个例子。而[tiddly-gittly.github.io/Tiddlywiki-NodeJS-Github-Template/](https://tiddly-gittly.github.io/Tiddlywiki-NodeJS-Github-Template/)是这个repo的部署例子。(有一些优化，使这个演示只读，并且不能下载，所以它的大小几乎和GIF图片一样小。)
 
-You need to change the contents of the `$:/GitHub/Repo` entry to your personal github repository address.The default branch is master, you can manually change the `$:/core/templates/canonical-uri-external-image` entry to another branch such as main.
+需要修改`$:/GitHub/Repo`条目内容为个人github仓库地址。默认分支是master，可以手动修改`$:/core/templates/canonical-uri-external-image`条目，改成其他比如main分支。
 
-Downloadable HTML is at [tiddly-gittly.github.io/Tiddlywiki-NodeJS-Github-Template/offline.html](https://tiddly-gittly.github.io/Tiddlywiki-NodeJS-Github-Template/offline.html), which contains edit related plugins, and will be slightly bigger (a size of a tiktok video.)
+可下载的HTML在[tiddly-gittly.github.io/Tiddlywiki-NodeJS-Github-Template/offline.html](https://tiddly-gittly.github.io/Tiddlywiki-NodeJS-Github-Template/offline.html)，其中包含编辑相关的插件，而且会稍微大一些（相当于一个tiktok视频的大小）。
 
-Also there is a TiddlyHost template at [tiddlyhost.com/hub/user/linonetwo](https://tiddlyhost.com/hub/user/linonetwo), which will update manually when I remember it. (It is same as, download the offline version above, and upload to a newly created tiddlyhost wiki.)
+另外在 [tiddlyhost.com/hub/user/linonetwo](https://tiddlyhost.com/hub/user/linonetwo) 有一个 TiddlyHost 模板，点 Clone 按钮可在线使用，当我想起来的时候会手动更新。(其实等价于，先下载上面的离线版本，然后上传到新创建的 tiddlyhost wiki 上）。
 
-This repo used to contains the wiki backup data and script to start a local wiki server on MacOS on start up. It is now deprecated, and no money to maintain, now [TiddlyGit-Desktop](https://github.com/tiddly-gittly/TiddlyGit-Desktop) is preferred. Old version can be found at the [feat/auto-start branch](https://github.com/tiddly-gittly/Tiddlywiki-NodeJS-Github-Template/tree/feat/auto-start). Contribution to it is welcome.
+这个 repo 曾经包含wiki的备份数据和脚本，用于在MacOS上启动本地wiki服务器。现在它已经被废弃了，而且没有钱去维护，现在[TiddlyGit-Desktop](https://github.com/tiddly-gittly/TiddlyGit-Desktop)是首选。旧版本可以在[feat/auto-start分支](https://github.com/tiddly-gittly/Tiddlywiki-NodeJS-Github-Template/tree/feat/auto-start)中找到。我们欢迎对它的贡献。
 
-## Setup
+## 设置
 
 [用TiddlyWiki替代Notion和EverNote作为个人知识管理系统 (Chinese)](https://onetwo.ren/%E7%94%A8tiddlywiki%E6%9B%BF%E4%BB%A3notion%E5%92%8Cevernote%E7%AE%A1%E7%90%86%E7%9F%A5%E8%AF%86/)
 
-English translation comeout soon. (?)
+英文翻译即将问世。(?)
 
-## Deployed to Github Pages
+## 部署到Github页面
 
-Automatically.
+自动。
 
 ## NPM Scripts
 
-`npm build`: pack tiddlywiki data to a HTML file
+`npm build`: 将tiddlywiki的数据打包成一个HTML文件。
 
 ## Shell Scripts
 
-[scripts/build-wiki.js](scripts/build-wiki.js) will actually pack tiddlywiki data to a HTML file
+[scripts/build-wiki.js](scripts/build-wiki.js)实际上会把tiddlywiki的数据打包到一个HTML文件中。
 
-## Credit
+## 灵感
 
-Scripts are inspired by [DiamondYuan/wiki](https://github.com/DiamondYuan/wiki)
->>>>>>> a2622ca (使用太记桌面版备份)
->>>>>>> af9bded (Conflict files committed with TiddlyGit-Desktop)
+脚本的灵感来自[DiamondYuan/wiki](https://github.com/DiamondYuan/wiki)
