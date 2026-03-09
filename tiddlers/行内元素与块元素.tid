@@ -1,7 +1,7 @@
 created: 20260309015653149
 creator: Gu Runjing
-modified: 20260309015653149
-modifier: Gu Runjing
+modified: 20260309094344343
+modifier: LanHao
 tags: HTML 使用教程
 title: 行内元素与块元素
 type: text/vnd.tiddlywiki
@@ -11,7 +11,7 @@ wysiwyg: yes
 
 ! 常见行内元素
 
-|<th align="left">| 标签|</th>|<th align="left">| 名称|</th>|<th align="left">| 核心用途|</th>|
+|<th align="left">|| 标签||</th>|<th align="left">|| 名称||</th>|<th align="left">|| 核心用途||</th>|
 |`div`|通用块容器|布局容器、分组元素|
 |`p`|段落|文本段落|
 |`h1`|`-`|`h6`|标题（1-6级）|层级标题|
@@ -31,7 +31,7 @@ wysiwyg: yes
 
 ! 常见块元素
 
-|<th align="left">| 标签|</th>|<th align="left">| 名称|</th>|<th align="left">| 核心用途|</th>|
+|<th align="left">|| 标签||</th>|<th align="left">|| 名称||</th>|<th align="left">|| 核心用途||</th>|
 |`span`|通用行内容器|行内文本分组、局部样式调整|
 |`a`|超链接|跳转至其他页面、锚点或外部资源|
 |`strong`|加粗文本|语义化强调重要内容|

@@ -1,10 +1,12 @@
 {
   "$schema": "https://raw.githubusercontent.com/tiddly-gittly/TidGi-Desktop/master/src/services/workspaces/tidgi.config.schema.json",
   "version": 1,
-  "name": "网页前端与太微使用",
+  "name": "LanHaoTiddly",
   "port": 5214,
-  "gitUrl": "https://github.com/LanHao99/TiddySync",
+  "gitUrl": "https://github.com/LanHao99/LanHaoTiddly",
   "storageService": "github",
-  "userName": "Gu Runjing",
-  "enableHTTPAPI": true
+  "userName": "LanHao",
+  "enableHTTPAPI": true,
+  "enableFileSystemWatch": true,
+  "syncOnInterval": true
 }
