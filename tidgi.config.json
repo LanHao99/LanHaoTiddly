@@ -4,9 +4,9 @@
   "name": "LanHaoTiddly",
   "port": 5214,
   "gitUrl": "https://github.com/LanHao99/LanHaoTiddly",
+  "storageService": "github",
   "userName": "LanHao",
   "enableHTTPAPI": true,
   "enableFileSystemWatch": true,
-  "syncOnStartup": false,
-  "hibernateWhenUnused": true
+  "syncOnInterval": true
 }
