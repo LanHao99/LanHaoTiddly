@@ -1,0 +1,8 @@
+[
+    {
+        "title": "$:/plugins/kookma/utility/styles/wikitext-macro",
+        "tags": "$:/tags/Stylesheet",
+        "type": "text/vnd.tiddlywiki",
+        "text": ".doc-example {\r\n\tmargin: 1em 0;\r\n\tpadding: 0.8em 0;\r\n}\r\n.doc-example:hover {\r\n\tbackground-color: <<colour code-background>>;\r\n}\r\n.doc-example ul {\r\n\tmargin-bottom: 0;\r\n\tpadding-bottom: 0;\r\n\tmargin-top: 0.2em;\r\n}\n\n.doc-example input[type=search] { \r\n  width: 95%;\r\n}\r\n.doc-example pre:first-child {\r\n\tmargin-top: 0;\r\n}"
+    }
+]

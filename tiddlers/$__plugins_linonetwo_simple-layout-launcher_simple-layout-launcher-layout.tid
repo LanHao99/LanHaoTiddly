@@ -1,0 +1,11 @@
+[
+    {
+        "title": "$:/plugins/linonetwo/simple-layout-launcher/simple-layout-launcher-layout",
+        "description": "<<lingo Description $:/plugins/linonetwo/simple-layout-launcher/language/>>",
+        "icon": "$:/plugins/linonetwo/simple-layout-launcher/simple-layout-launcher-layout-image",
+        "name": "<<lingo Name $:/plugins/linonetwo/simple-layout-launcher/language/>>",
+        "tags": "$:/tags/Layout",
+        "type": "text/vnd.tiddlywiki",
+        "text": "\\whitespace trim\r\n\\import [subfilter{$:/core/config/GlobalImportFilter}]\r\n\\define containerClasses()\r\ntc-page-container tc-language-$(languageTitle)$ simple-layout-launcher-container\r\n\\end\r\n\\procedure redirected-navigate-actions()\r\n  <$action-setfield $tiddler=\"$:/layout\" text=\"\" $timestamp=\"no\" />\r\n  <$action-navigate $to=<<event-navigateTo>> $scroll=\"yes\" />\r\n\\end\n\n<$navigator story=\"$:/StoryList\" history=\"$:/HistoryList\" openLinkFromInsideRiver={{$:/config/Navigation/openLinkFromInsideRiver}} openLinkFromOutsideRiver={{$:/config/Navigation/openLinkFromOutsideRiver}} relinkOnRename={{$:/config/RelinkOnRename}}>\r\n\t<$messagecatcher $tm-navigate=<<redirected-navigate-actions>>>\r\n\t\t{{$:/core/ui/CommandPaletteTemplate}}\r\n\t\t<div class=<<containerClasses>>>\r\n\t\t\t<div class=\"linonetwo-simple-layout-launcher-layout-container\">\r\n\t\t\t\t<<simple-layout-launcher>>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</$messagecatcher>\r\n</$navigator>\r\n"
+    }
+]

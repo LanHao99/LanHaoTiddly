@@ -1,0 +1,9 @@
+[
+    {
+        "title": "$:/plugins/kookma/utility/customize-ui/sidebar-elements",
+        "caption": "Sidebar elements",
+        "tags": "$:/tags/Utility/UI",
+        "type": "text/vnd.tiddlywiki",
+        "text": "Choose which elements are displayed in right sidebar. \n\n<$checkbox tiddler=\"$:/core/ui/TopBar/menu\" tag=\"$:/tags/TopRightBar\"/> Show right sidebar toggle button<br/>\r\n<$checkbox tiddler=\"$:/core/ui/SideBarSegments/search\" tag=\"$:/tags/SideBarSegment\"/> Show search bar<br/>\r\n<$checkbox tiddler=\"$:/core/ui/SideBarSegments/tabs\" tag=\"$:/tags/SideBarSegment\"/> Show sidebar tabs<br/>\r\n<!-- reserved\r\n<$checkbox tiddler=\"$:/config/custom-segment\" tag=\"$:/tags/SideBarSegment\"/> Show custom menu -->"
+    }
+]

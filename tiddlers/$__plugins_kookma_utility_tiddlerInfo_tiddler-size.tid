@@ -1,0 +1,9 @@
+[
+    {
+        "title": "$:/plugins/kookma/utility/tiddlerInfo/tiddler-size",
+        "caption": "Tiddler size",
+        "tags": "$:/tags/TiddlerInfo",
+        "type": "text/vnd.tiddlywiki",
+        "text": "\\function .fieldnames() [<currentTiddler>fields[]sort[]]  -[[draft.title]] -[[draft.of]]\r\n\\function .lines() [.fieldnames[]] :map[<..currentTiddler>get<currentTiddler>splitregexp[\\n]count[]else[0]] [enlist<fieldnames>count[]else[0]] +[sum[]]\r\n\\function .words() [.fieldnames[]] :map[<..currentTiddler>get<currentTiddler>splitregexp[\\n]splitregexp[\\s+]count[]else[0]] [enlist<fieldnames>splitregexp[\\s+]count[]else[0]] +[sum[]]\r\n\\function .bytes() [.fieldnames[]] :map[<..currentTiddler>get<currentTiddler>else[]length[]] [enlist<fieldnames>length[]else[0]] +[sum[]]\n\n\\procedure tiddlerSize()\r\n   <table class=\"kk-utility-tiddlersize\">\r\n      <tr><th>fieldname</th><th>lines</th><th>words</th><th>bytes</th></tr>\r\n      <$list filter=\"[.fieldnames[]]\" variable=\"fieldname\">\r\n         <tr>\r\n            <td><<fieldname>></td>\r\n            <td><$text text={{{ [<currentTiddler>get<fieldname>splitregexp[\\n]count[]else[0]] }}}/></td>\r\n            <td><$text text={{{ [<currentTiddler>get<fieldname>splitregexp[\\n]splitregexp[\\s+]count[]else[0]] }}}/></td>\r\n            <td><$text text={{{ [<currentTiddler>get<fieldname>length[]else[0]] }}}/></td>\r\n         </tr>\r\n      </$list>\r\n      <tr>\r\n         <td>field names</td>\r\n         <td><$text text={{{ [.fieldnames[]count[]else[0]] }}}/></td>\r\n         <td><$text text={{{ [.fieldnames[]splitregexp[\\s+]count[]else[0]] }}}/></td>\r\n         <td><$text text={{{ [.fieldnames[]length[]else[0]] +[sum[]] }}}/></td>\r\n      </tr>\r\n      <tr>\r\n         <th>totals</th>\r\n         <th><<.lines>></th>\r\n         <th><<.words>></th>\r\n         <th><<.bytes>></th>\r\n      </tr>\r\n   </table>\r\n\\end tiddlerSize\n\n<<tiddlerSize>>"
+    }
+]

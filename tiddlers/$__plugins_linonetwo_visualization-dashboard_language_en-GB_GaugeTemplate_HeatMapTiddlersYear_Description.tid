@@ -1,0 +1,7 @@
+[
+    {
+        "title": "$:/plugins/linonetwo/visualization-dashboard/language/en-GB/GaugeTemplate/HeatMapTiddlersYear/Description",
+        "type": "text/vnd.tiddlywiki",
+        "text": "A heat map showing the number of tiddlers created each day of the year, including created and modified."
+    }
+]

@@ -1,0 +1,9 @@
+[
+    {
+        "title": "$:/snippets/LayoutSwitcher",
+        "caption": "{{$:/language/ControlPanel/LayoutSwitcher/Caption}}",
+        "tags": "$:/tags/ControlPanel/Appearance",
+        "type": "text/vnd.tiddlywiki",
+        "text": "<<simple-layout-launcher>>"
+    }
+]

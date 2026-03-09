@@ -1,0 +1,9 @@
+[
+    {
+        "description": "list of UI controls to be hidden in reader mode",
+        "tags": "",
+        "title": "$:/config/utility/reader-mode",
+        "type": "text/vnd.tiddlywiki",
+        "text": "<!-- Tiddler view toolbar controls -->\r\n$:/core/ui/Buttons/clone\r\n$:/core/ui/Buttons/delete\r\n$:/core/ui/Buttons/edit\r\n$:/core/ui/Buttons/info\r\n$:/core/ui/Buttons/new-here\r\n$:/core/ui/Buttons/new-journal-here\n\n<!-- TiddlyWiki page controls -->\r\n$:/core/ui/Buttons/control-panel\r\n$:/core/ui/Buttons/import\r\n$:/core/ui/Buttons/manager\r\n$:/core/ui/Buttons/new-image\r\n$:/core/ui/Buttons/new-journal\r\n$:/core/ui/Buttons/new-tiddler\r\n$:/core/ui/Buttons/save-wiki\r\n$:/core/ui/Buttons/advanced-search\n\n<!-- Kookma plugin controls -->\r\n$:/plugins/kookma/favorites/ui/buttons/add-remove\r\n$:/plugins/kookma/trashbin/ui/toolbar-button\n\n$:/plugins/kookma/commander/ui/Buttons/open-commander\r\n$:/plugins/kookma/utility/ui/Buttons/edit-fields"
+    }
+]

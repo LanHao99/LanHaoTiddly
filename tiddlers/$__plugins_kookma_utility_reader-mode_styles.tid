@@ -1,0 +1,8 @@
+[
+    {
+        "title": "$:/plugins/kookma/utility/reader-mode/styles",
+        "tags": "$:/tags/Stylesheet",
+        "type": "text/vnd.tiddlywiki",
+        "text": "<!--\r\nThis tiddler is inspired from Tiddlyweb plugin. See $:/plugins/tiddlywiki/tiddlyweb/readonly\r\n-->\n\n\\rules only fnprocdef conditional commentblock macrocallinline\n\n\\procedure hide-edit-controls()\r\n<$list filter=\"[{$:/config/utility/reader-mode}splitregexp[\\n]!is[blank]!prefix[<!--]encodeuricomponent[]escapecss[]addprefix[button.tc-btn-]] :and[join[,]]\">\n\n<<currentTiddler>>\r\n{\r\n\tdisplay: none;\r\n}\r\n</$list>\r\n\\end hide-edit-controls\n\n\\procedure immersive-reader-mode()\r\n<%if [[$:/config/Utility]getindex[immersive-reader]match[yes]] %>\n\n.tc-tiddler-controls\r\n   button:not(.tc-btn-\\%24\\%3A\\%2Fcore\\%2Fui\\%2FButtons\\%2Fclose)\r\n{\r\n\tdisplay:none;\r\n}\r\n.tc-show-sidebar-btn, .tc-hide-sidebar-btn {\r\n\tdisplay:none;\r\n}\r\n<%endif%>\r\n\\end immersive-reader-mode\n\n<!-- By default reader mode is off -->\r\n<%if [[$:/config/utility/IsReaderMode]get[text]else[no]match[yes]] %>\n\n<<hide-edit-controls>>\r\n<<immersive-reader-mode>>\r\n<%endif%>\n\n"
+    }
+]

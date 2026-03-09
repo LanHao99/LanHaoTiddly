@@ -1,0 +1,9 @@
+[
+    {
+        "title": "$:/plugins/kookma/utility/edittemplates/tiddler-size",
+        "list-after": "$:/core/ui/EditTemplate/controls",
+        "tags": "$:/tags/EditTemplate",
+        "type": "text/vnd.tiddlywiki",
+        "text": "\\function .fieldnames() text\r\n\\function .lines() [.fieldnames[]] :map[<..currentTiddler>get<currentTiddler>splitregexp[\\n]count[]else[0]] [enlist<fieldnames>count[]else[0]] +[sum[]]\r\n\\function .words() [.fieldnames[]] :map[<..currentTiddler>get<currentTiddler>splitregexp[\\n]splitregexp[\\s+]count[]else[0]] [enlist<fieldnames>splitregexp[\\s+]count[]else[0]] +[sum[]]\r\n\\function .bytes() [.fieldnames[]] :map[<..currentTiddler>get<currentTiddler>else[]length[]] [enlist<fieldnames>length[]else[0]] +[sum[]]\n\n<%if [[$:/config/Utility]getindex[tiddler-size-edit-mode]match[show]] %>\r\n\t<$let popid={{{ [[$:/temp/TiddlyTools/Templates/Size/]addsuffix<currentTiddler>addsuffix<qualify>] }}} >\r\n\t\t<$button class=\"tc-btn-invisible kk-utility-tiddlersize-btn\" popup=<<popid>> tooltip=\"show field sizes\">\r\n\t\t\t Tiddler text: <<.lines>> lines, <<.words>> words, <<.bytes>> bytes {{$:/core/images/down-arrow}} <!-- only text field statistics -->\r\n\t\t</$button>\r\n\t\t<$reveal state=<<popid>> type=\"popup\" class=\"tc-drop-down kk-utility-tiddlersize-dropdwon\">\r\n\t\t<$importvariables filter=\"[[$:/plugins/kookma/utility/tiddlerInfo/tiddler-size]]\">\r\n\t\t\t<<tiddlerSize>> <!-- full tiddler statistics -->\r\n\t\t</$importvariables>\t\r\n\t\t</$reveal>\r\n\t</$let>\r\n<%endif%>"
+    }
+]

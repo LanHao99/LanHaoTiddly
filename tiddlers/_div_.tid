@@ -1,0 +1,8 @@
+tags: HTML 代码片段
+title: <div>
+type: text/vnd.tiddlywiki
+
+可以用div来包裹行级元素，跟ae预合成一样，这样方便把class作用到一批内容上
+
+由于div太常用，因此在编辑器里可以按.name创建一个syle=name 的div
+

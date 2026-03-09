@@ -1,0 +1,4 @@
+tags: 代码片段 HTML
+title: <span>
+
+和[[<div>]]相比，span是行内元素，也用于包装一段内容，方便对其使用css样式（style）

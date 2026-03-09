@@ -1,0 +1,8 @@
+[
+    {
+        "title": "$:/plugins/kookma/utility/procedures/kbd",
+        "tags": "$:/tags/Global",
+        "type": "text/vnd.tiddlywiki",
+        "text": "\\procedure kbd(keys, color)\r\n<kbd style=`color:$(color)$;`><<keys>></kbd>\r\n\\end"
+    }
+]

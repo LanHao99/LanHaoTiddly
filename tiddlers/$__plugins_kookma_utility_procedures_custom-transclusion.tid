@@ -1,0 +1,8 @@
+[
+    {
+        "title": "$:/plugins/kookma/utility/procedures/custom-transclusion",
+        "tags": "$:/tags/Global",
+        "type": "text/vnd.tiddlywiki",
+        "text": "\\procedure source-link(tiddler, caption)\r\n<$tiddler  tiddler={{{[<tiddler>get[title]else<currentTiddler>]}}} >\r\n<$link/>\r\n<$transclude $variable=\"code\" language={{{ [<currentTiddler>get[type]else[text/vnd.tiddlywiki]] }}} src={{!!text}} caption=<<caption>>/>\r\n</$tiddler>\r\n\\end\n\n\\procedure content(tiddler)\r\n<$tiddler  tiddler={{{[<tiddler>get[title]else<currentTiddler>]}}} >\r\n<$link/>\r\n<$transclude $field=\"text\" $mode=\"block\"/>\r\n</$tiddler>\r\n\\end\n\n\\procedure description(tiddler)\r\n<$tiddler  tiddler={{{[<tiddler>get[title]else<currentTiddler>]}}} >\r\n<dl>\r\n<dt><$link/></dt>\r\n<dd><$transclude $field=\"description\"/></dd>\r\n</dl>\r\n</$tiddler>\r\n\\end\n\n\\procedure fields(tiddler)\r\n<$tiddler  tiddler={{{[<tiddler>get[title]else<currentTiddler>]}}} >\r\n<$link/>\r\n<$transclude tiddler=\"$:/core/ui/TiddlerFields\"/>\r\n</$tiddler>\r\n\\end"
+    }
+]

@@ -1,0 +1,10 @@
+[
+    {
+        "title": "$:/plugins/kookma/utility/procedures/uid",
+        "author": "Jeremy Ruston",
+        "description": "creates a unique id for permanent state tiddler",
+        "tags": "$:/tags/Global",
+        "type": "text/vnd.tiddlywiki",
+        "text": "\\procedure uid(prefix:\"id\")\r\n<$let uid={{{ [<prefix>][<now [UTC]YYYY0MM0DD0hh0mm0ssXXX>] :and[join[-]] }}}>\r\n\t<$button tooltip=\"create unique id\" class=\"tc-btn-invisible\">\r\n\t<$action-sendmessage $message=\"tm-copy-to-clipboard\" $param=<<uid>> successNotification=\"$:/language/Utility/Notifications/UID/CopiedToClipboard/Succeeded\"/>\r\n\t\t{{$:/core/images/copy-clipboard}} \r\n\t</$button>&nbsp;\r\n\t<$text text=<<uid>>/>\r\n</$let>\r\n\\end"
+    }
+]

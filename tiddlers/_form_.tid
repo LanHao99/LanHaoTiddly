@@ -1,0 +1,17 @@
+tags: 表单 代码片段
+title: <form>
+type: text/vnd.tiddlywiki
+
+创建表单的容器
+
+! 属性
+action="发送目标"
+
+|! 属性名       |! 作用说明                                                                 |! 取值/示例                          |! 适用场景                     |
+| `action`     | 指定表单提交的目标地址（数据发送到哪里）                                   | 绝对URL/相对路径/后端接口（如 `action="https://api.example.com/submit"`/`action="submit.html"`） | 所有需要提交数据的表单       |
+| `method`     | 指定表单提交的 HTTP 方法                                                 | `get`（默认）/`post`              | get：简单查询（如搜索）；post：隐私数据（如登录/注册） |
+| `enctype`    | 指定表单数据的编码方式（仅 `method="post"` 时有效）                       | `application/x-www-form-urlencoded`（默认）/`multipart/form-data`/`text/plain` | 含文件上传用 `multipart/form-data` |
+| `target`     | 指定表单提交后响应的打开方式                                             | `_self`（当前窗口，默认）/`_blank`（新窗口）/`_parent`（父框架）/`_top`（顶层框架） | 需要在新窗口查看提交结果     |
+| `autocomplete` | 控制表单内所有输入框的自动补全（优先级低于输入框自身的 `autocomplete`）     | `on`（默认）/`off`                | 隐私表单（如支付页）关闭补全 |
+| `novalidate` | 禁用浏览器默认的表单校验（如 `required`/`pattern` 校验）                   | `novalidate`（无需额外值）         | 自定义 JS 校验逻辑时使用     |
+| `rel`        | 指定表单提交目标地址的关系（安全相关，防止跨站风险）                       | `noopener`/`noreferrer`/`noopener noreferrer` | 提交到外部地址时提升安全性   |

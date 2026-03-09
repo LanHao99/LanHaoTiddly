@@ -1,0 +1,9 @@
+[
+    {
+        "title": "$:/plugins/kookma/utility/snippets/code-procedure",
+        "caption": "Code",
+        "tags": "$:/tags/TextEditor/Snippet",
+        "type": "text/vnd.tiddlywiki",
+        "text": "<<code src:\"\" language:\"xml\" caption:\"\">>"
+    }
+]

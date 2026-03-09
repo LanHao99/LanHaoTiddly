@@ -1,0 +1,8 @@
+[
+    {
+        "title": "$:/plugins/linonetwo/simple-layout-launcher/simple-layout-launcher.css.variable",
+        "tags": "$:/tags/Stylesheet",
+        "type": "text/vnd.tiddlywiki",
+        "text": "\\import [[$:/themes/tiddlywiki/vanilla/base]]\n\n.linonetwo-simple-layout-launcher-item:hover .linonetwo-simple-layout-launcher-description {\r\n\tbackground: <<colour tiddler-info-background>>;\r\n}\n\n/** Desktop, center it and add padding */\r\n@media (min-width: <<sidebarbreakpoint>>) {\r\n\t.linonetwo-simple-layout-launcher-layout-container {\r\n\t\tpadding: 100px;\r\n\t}\r\n\t.linonetwo-simple-layout-launcher-layout-container .linonetwo-simple-layout-launcher {\r\n\t\tjustify-content: center;\r\n\t}\r\n}\n\n.simple-layout-launcher-sidebar a {\r\n\tfill: <<colour sidebar-tiddler-link-foreground>>;\r\n}\r\n.simple-layout-launcher-sidebar a:hover {\r\n\tfill: <<colour sidebar-tiddler-link-foreground-hover>>;\r\n}\n\n/** Mobile layout switcher, model is small can't change, so make item width 100% */\r\n@media (max-width: <<sidebarbreakpoint>>) {\r\n\t.tc-modal:has(.tc-modal-body):has(div):has(p):has(.linonetwo-simple-layout-launcher) {\r\n\t\twidth: 90%;\r\n\t}\r\n}\r\n"
+    }
+]

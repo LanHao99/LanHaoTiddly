@@ -1,0 +1,9 @@
+[
+    {
+        "title": "$:/plugins/kookma/utility/snippets/pass-proc",
+        "caption": "Password",
+        "tags": "$:/tags/TextEditor/Snippet",
+        "type": "text/vnd.tiddlywiki",
+        "text": "<<pass password:\"\" label:\"Pass\">>"
+    }
+]

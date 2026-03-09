@@ -1,0 +1,11 @@
+[
+    {
+        "title": "$:/plugins/kookma/utility/ui/Buttons/edit-fields",
+        "caption": "{{$:/plugins/kookma/utility/images/edit-fields.svg}} {{$:/language/Buttons/Utility/EditFields/Caption}}",
+        "description": "{{$:/language/Buttons/Utility/EditFields/Hint}}",
+        "list-before": "$:/plugins/kookma/shiraz/ui/Buttons/SwitchPalette",
+        "tags": "$:/tags/PageControls",
+        "type": "text/vnd.tiddlywiki",
+        "text": "\\whitespace trim\n\n\\procedure stateTid() $:/state/utility/edit-fields\n\n\\procedure control-panel-button(status, class)\r\n\\whitespace trim\r\n\t<$button set=<<stateTid>> setTo=<<status>> tooltip={{$:/language/Buttons/Utility/EditFields/Hint}} aria-label={{$:/language/Buttons/Utility/EditFields/Caption}} class=`$(tv-config-toolbar-class)$ $(class)$` >\r\n\t\t\t<$list filter=\"[<tv-config-toolbar-icons>match[yes]]\">\r\n\t\t\t\t\t{{$:/plugins/kookma/utility/images/edit-fields.svg}}  \r\n\t\t\t</$list>\r\n\t\t\t<$list filter=\"[<tv-config-toolbar-text>match[yes]]\">\r\n\t\t\t\t\t<span class=\"tc-btn-text\"><$text text={{$:/language/Buttons/Utility/EditFields/Caption}}/></span>\r\n\t\t\t</$list>\r\n\t</$button>\r\n\\end\t\n\n\r\n<%if [<stateTid>get[text]match[show]] %>\r\n\t<<control-panel-button status:\"hide\" class:\"tc-selected\">>\r\n<%else%>\r\n\t<<control-panel-button status:\"show\">>\r\n<%endif%>"
+    }
+]

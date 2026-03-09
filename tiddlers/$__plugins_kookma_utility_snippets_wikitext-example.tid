@@ -1,0 +1,9 @@
+[
+    {
+        "title": "$:/plugins/kookma/utility/snippets/wikitext-example",
+        "caption": "Wikitext-example",
+        "tags": "$:/tags/TextEditor/Snippet",
+        "type": "text/vnd.tiddlywiki",
+        "text": "<<wikitext-example \r\nsrc:\"\"\"\r\n\"\"\">>"
+    }
+]

@@ -1,0 +1,8 @@
+[
+    {
+        "title": "$:/plugins/kookma/utility/procedures/linkify",
+        "tags": "$:/tags/Global",
+        "type": "text/vnd.tiddlywiki",
+        "text": "\\procedure linkify(tiddler:\"\", field:\"caption\")\r\n<$link to=<<tiddler>> >\r\n\t<$view tiddler=<<tiddler>> field=<<field>> >\r\n\t\t\t<$view tiddler=<<tiddler>> field=\"title\" />\r\n\t</$view>\r\n</$link>\r\n\\end"
+    }
+]

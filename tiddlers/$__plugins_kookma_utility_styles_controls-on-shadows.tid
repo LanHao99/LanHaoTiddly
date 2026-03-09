@@ -1,0 +1,8 @@
+[
+    {
+        "title": "$:/plugins/kookma/utility/styles/controls-on-shadows",
+        "tags": "$:/tags/Stylesheet",
+        "type": "text/vnd.tiddlywiki",
+        "text": " \\rules only commentblock conditional\r\n<!-- by default controls of view toolbar for shadow tiddlers are hidden -->\r\n<%if [[$:/config/Utility]getindex[toolbar-controls-on-shadows]else[hide]match[hide]] %>\n\n.tc-tiddler-shadow .tc-tiddler-controls\r\n   button:not(.tc-btn-\\%24\\%3A\\%2Fcore\\%2Fui\\%2FButtons\\%2Fclose)\r\n{\r\n\tdisplay:none;\r\n}\n\n<%endif%>"
+    }
+]

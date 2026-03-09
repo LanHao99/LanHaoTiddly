@@ -1,0 +1,7 @@
+[
+    {
+        "title": "$:/plugins/linonetwo/visualization-dashboard/language/en-GB/GaugeTemplate/LineTagHoursWeek/Caption",
+        "type": "text/vnd.tiddlywiki",
+        "text": "Hours per day for this week's tags."
+    }
+]

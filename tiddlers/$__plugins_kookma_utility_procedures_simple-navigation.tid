@@ -1,0 +1,8 @@
+[
+    {
+        "title": "$:/plugins/kookma/utility/procedures/simple-navigation",
+        "tags": "$:/tags/Global",
+        "type": "text/vnd.tiddlywiki",
+        "text": "\\procedure simple-navigation(tag:\"demo\", class, close:\"no\")\r\n<$list filter=\"[all[current]tag<tag>]\">\r\n<div class=`$(class)$`>\r\n\t<$list filter=\"[tag<tag>before<currentTiddler>]\" variable=\"prevTiddler\">\r\n\t\t<$button to=<<prevTiddler>> tooltip=<<prevTiddler>> class=`tc-btn-invisible $(class)$`>previous\r\n\t\t\t\t<%if [<close>match[yes]] %><$action-sendmessage $message=\"tm-close-tiddler\" $param=<<currentTiddler>>/><%endif%>\r\n\t\t</$button>\r\n\t</$list>\r\n\t<%if [tag<tag>after<currentTiddler>][tag<tag>before<currentTiddler>] :and[count[]compare:integer:gteq[2]] %>|<%endif%>\r\n\t<$list filter=\"[tag<tag>after<currentTiddler>]\" variable=\"nextTiddler\">\r\n\t\t<$button to=<<nextTiddler>> tooltip=<<nextTiddler>> class=`tc-btn-invisible $(class)$`>next\r\n\t\t\t\t<%if [<close>match[yes]] %><$action-sendmessage $message=\"tm-close-tiddler\" $param=<<currentTiddler>>/><%endif%>\r\n\t\t</$button>\r\n\t</$list>\r\n</div>\r\n</$list>\r\n\\end"
+    }
+]

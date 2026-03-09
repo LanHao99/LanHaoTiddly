@@ -1,0 +1,9 @@
+[
+    {
+        "title": "$:/plugins/kookma/utility/snippets/linkify",
+        "caption": "Linkify",
+        "tags": "$:/tags/TextEditor/Snippet",
+        "type": "text/vnd.tiddlywiki",
+        "text": "<<linkify tiddler:\"\" field:\"caption\">>"
+    }
+]

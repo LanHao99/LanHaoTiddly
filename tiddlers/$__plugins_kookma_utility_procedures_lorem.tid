@@ -1,0 +1,10 @@
+[
+    {
+        "title": "$:/plugins/kookma/utility/procedures/lorem",
+        "author": "Jeremy Ruston",
+        "description": "creates few paragraphs of dumy text",
+        "tags": "$:/tags/Global",
+        "type": "text/vnd.tiddlywiki",
+        "text": "\\procedure .lorem(np:1, nw:\"\")\r\n\\procedure baseText()\r\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\r\n\\end baseText\n\n<$let numwords={{{ [<nw>!match[]] :else[<baseText>split[ ]count[]]  }}} numparagraphs=`[range[1,$(np)$]]`>\r\n<$list filter=\"[<baseText>split[ ]limit<numwords>join[ ]trim[,]trim[.]addsuffix[.]]\" variable=paragraph>\n\n<$list filter=<<numparagraphs>> variable=null> \r\n<<paragraph>>\r\n<$list filter=\"[<np>!match[1]]\"><p/></$list>\r\n</$list>\n\n</$list>\r\n</$let>\r\n\\end .lorem"
+    }
+]

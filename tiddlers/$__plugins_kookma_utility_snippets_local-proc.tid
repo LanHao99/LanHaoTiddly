@@ -1,0 +1,9 @@
+[
+    {
+        "title": "$:/plugins/kookma/utility/snippets/local-proc",
+        "caption": "Local",
+        "tags": "$:/tags/TextEditor/Snippet",
+        "type": "text/vnd.tiddlywiki",
+        "text": "<<local folder:\"\" label:\"\">>"
+    }
+]

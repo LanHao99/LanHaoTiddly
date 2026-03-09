@@ -1,0 +1,8 @@
+[
+    {
+        "tags": "$:/tags/Macro",
+        "title": "$:/core/ui/sideBar/timeline",
+        "type": "text/vnd.tiddlywiki",
+        "text": "\\define timeline-title() <$transclude field=\"caption\"><$view field=\"title\"/></$transclude>\r\n"
+    }
+]

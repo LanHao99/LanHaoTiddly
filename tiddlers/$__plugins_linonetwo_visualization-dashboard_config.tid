@@ -1,0 +1,9 @@
+[
+    {
+        "caption": "<<lingo \"Name\" \"$:/plugins/linonetwo/visualization-dashboard/language/\">>",
+        "tags": "$:/tags/ControlPanel/SettingsTab",
+        "title": "$:/plugins/linonetwo/visualization-dashboard/config",
+        "type": "text/vnd.tiddlywiki",
+        "text": "\\define lingo-base() $:/plugins/linonetwo/visualization-dashboard/language/\n\n<<lingo ConfigDescription>>\n\n---\n\n! <<lingo PluginConfigs>>\r\n"
+    }
+]

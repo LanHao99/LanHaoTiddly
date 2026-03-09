@@ -1,0 +1,8 @@
+[
+    {
+        "title": "$:/plugins/kookma/utility/procedures/doc-url",
+        "tags": "$:/tags/Global",
+        "type": "text/vnd.tiddlywiki",
+        "text": "\\procedure doc-url(url)\r\n<$let topic={{{ [<url>split[.html]last[]] }}}\r\n      ourl= {{{[<topic>addprefix[https://tiddlywiki.com]]}}} >\r\n<a href=<<ourl>> target=_blank><$text text={{{[<topic>removeprefix[#]] :and[decodeuricomponent[]] }}} /></a>\r\n\\end"
+    }
+]

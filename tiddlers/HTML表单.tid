@@ -1,0 +1,14 @@
+tags: HTML 编程语法
+title: HTML表单
+type: text/vnd.tiddlywiki
+
+! 表单与表格
+表单就是让你填写内容的，而表格就是用来规范这些内容的格式的
+
+<$macrocall
+	$name="toc-tabbed-external-nav"
+	tag="表单"
+	selectedTiddler="$:/temp/toc/selectedTiddler/表单"
+	unselectedText="<p>在目录中选择一个主题。点击箭头展开主题。</p>"
+	missingText="<p>失踪的条目。</p>"
+/>

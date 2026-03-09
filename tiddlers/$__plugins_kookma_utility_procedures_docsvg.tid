@@ -1,0 +1,8 @@
+[
+    {
+        "title": "$:/plugins/kookma/utility/procedures/docsvg",
+        "tags": "$:/tags/Global",
+        "type": "text/vnd.tiddlywiki",
+        "text": "\\procedure doc-svg(tiddler:\"\", color:\"\")\r\n<span class=\"kk-doc\" style=`fill:$(color)$;`><$transclude tiddler=<<tiddler>> /></span>\r\n\\end"
+    }
+]

@@ -1,0 +1,8 @@
+[
+    {
+        "title": "$:/plugins/linonetwo/simple-layout-launcher/simple-layout-launcher",
+        "tags": "$:/tags/Global",
+        "type": "text/vnd.tiddlywiki",
+        "text": "\\procedure on-click()\r\n<!-- Close model, similar to click close button. -->\r\n<$action-sendmessage $message=\"tm-close-tiddler\" />\r\n\\end\n\n\\procedure simple-layout-launcher()\r\n\t\\whitespace trim\r\n\t<$linkcatcher to=\"$:/layout\" actions=<<on-click>> >\r\n\t\t<div class=\"linonetwo-simple-layout-launcher\">\r\n\t\t\t<$list filter=\"[[$:/core/ui/PageTemplate]] [all[tiddlers+shadows]tag[$:/tags/Layout]]\">\r\n\t\t\t\t<$set name=\"chosen-cls\" filter=\"[all[current]compare:eq{$:/layout}]\" value=\"linonetwo-simple-layout-launcher-item tc-chosen\" emptyValue=\"linonetwo-simple-layout-launcher-item\">\r\n\t\t\t\t\t<$link to={{!!title}}>\r\n\t\t\t\t\t\t<div class=<<chosen-cls>>>\r\n\t\t\t\t\t\t\t<span class=\"linonetwo-simple-layout-launcher-icon\">\r\n\t\t\t\t\t\t\t\t<$transclude tiddler={{{ [<currentTiddler>get[icon]] }}}/>\r\n\t\t\t\t\t\t\t</span>\r\n\t\t\t\t\t\t\t<span class=\"linonetwo-simple-layout-launcher-title\">\r\n\t\t\t\t\t\t\t\t<$transclude field=\"name\"/>\r\n\t\t\t\t\t\t\t</span>\r\n\t\t\t\t\t\t\t<span class=\"linonetwo-simple-layout-launcher-description\">\r\n\t\t\t\t\t\t\t\t<$transclude field=\"description\"/>\r\n\t\t\t\t\t\t\t</span>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</$link>\r\n\t\t\t\t</$set>\r\n\t\t\t</$list>\r\n\t\t</div>\r\n\t</$linkcatcher>\r\n\\end"
+    }
+]

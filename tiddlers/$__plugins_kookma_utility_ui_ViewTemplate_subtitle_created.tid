@@ -1,0 +1,9 @@
+[
+    {
+        "title": "$:/plugins/kookma/utility/ui/ViewTemplate/subtitle/created",
+        "list-before": "$:/core/ui/ViewTemplate/subtitle/modified",
+        "tags": "$:/tags/ViewTemplate/Subtitle",
+        "type": "text/vnd.tiddlywiki",
+        "text": "<%if [[$:/config/Utility]getindex[extended-subtitle]match[show]] %>\r\n<%if [{!!modifier}!is[blank]] %><br><%endif%>\r\n<%if [{!!modified}!is[blank]] %>\r\n<<doc-svg \"$:/plugins/kookma/utility/images/tiddler-created.svg\">> Created <$view field=\"created\" format=\"date\" template={{$:/language/Tiddler/DateFormat}}/><br>\r\n<<doc-svg \"$:/plugins/kookma/utility/images/tiddler-updated.svg\">> Updated \r\n<%endif%>\r\n<%endif%>"
+    }
+]

@@ -1,0 +1,10 @@
+title: HTML
+type: 
+
+<$macrocall
+	$name="toc-tabbed-external-nav"
+	tag="HTML"
+	selectedTiddler="$:/temp/toc/selectedTiddler/HTML"
+	unselectedText="<p>在目录中选择一个主题。点击箭头展开主题。</p>"
+	missingText="<p>失踪的条目。</p>"
+/>

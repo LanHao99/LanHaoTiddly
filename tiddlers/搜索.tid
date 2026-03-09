@@ -1,0 +1,46 @@
+tags: 使用教程
+title: 搜索
+type: text/vnd.tiddlywiki-multiple
+
+!! 标准搜索
+
+* 使用快捷键 <kbd>ctrl-shift-F</kbd> 在侧边栏的搜索框中搜索。 
+
+://（请注意，直到您点击搜索框右侧的“x”删除搜索结果，边栏中的搜索结果选项卡才会被隐藏）//
+
+* 使用快捷键 <kbd>ctrl-P</kbd> 打开 [[Command Palette|$:/plugins/souk21/commandpalette]] 进行搜索。（浏览器上按键如果冲突可能会没反应）
+
+
+!! 高级搜索
+
+点击搜索框右侧的放大镜图标 <<.icon $:/core/images/advanced-search-button>> 将打开[[高级搜索|$:/AdvancedSearch]]（快捷键 <kbd>ctrl-shift-A</kbd>）。 默认包含四个选项卡：
+
+* ''标准'' 选项卡包含了在侧边栏中的搜索框的另一个实例
+* ''系统'' 选项卡允许您将搜索限定在[[系统条目|https://tiddlywiki.com/static/SystemTiddlers.html]]
+* ''默认'' 选项卡允许您将搜索限定在[[默认条目|https://tiddlywiki.com/static/ShadowTiddlers.html]]
+* ''筛选'' 选项卡本身并不是一个搜索框，而是一种获取符合该[[过滤器|Filters]]描述的特定标准的所有条目的列表的方法。
+*> 务必要掌握 [[过滤器|Filters]] 的使用，它可以高效地管理条目。
+*''内容搜索'' 选项卡相比于''标准''选项卡，会直接显示条目中的内容。功能来自插件 $:/plugins/danielo515/ContextPlugin
+*''Query'' 选项卡允许您进行[[多词查询|$:/xp/query/help]]。功能来自插件 $:/plugins/xp/aggregation
+
+<div class="gray-box">
+
+相关设置：[[禁用搜索最小字数限制]]
+
+</div>
+
+要运用好高级搜索，首先得搞清楚 [[TiddlyWiki 中条目的类别|$:/help/TiddlerType]]。
+
+''搜索时常用的快捷键：''
+
+|<kbd>ctrl-shift-F</kbd> |侧边栏搜索框中查找 |
+|<kbd>ctrl-shift-A</kbd> |打开高级查找 |
+|<kbd>ctrl-shift-S</kbd> |打开侧边栏中的高级查找 |
+|<kbd>ctrl-shift-Right</kbd> |切换到下一个页签 |
+|<kbd>ctrl-shift-Left</kbd> |切换到上一个页签 |
+|<kbd>Home</kbd> |将光标移至文本开头 |
+|<kbd>End</kbd> |将光标移至文本末尾 |
+|<kbd>alt-Enter</kbd> |在高级查找中查看结果 |
+|<kbd>Enter</kbd> |打开给定条目 |
+|<kbd>Escape</kbd> |清空输入框 |
+|<kbd>ctrl-P</kbd> |Open the command palette |

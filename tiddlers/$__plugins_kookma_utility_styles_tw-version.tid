@@ -1,0 +1,12 @@
+[
+    {
+        "title": "$:/plugins/kookma/utility/styles/tw-version",
+        "created": "20180906042308596",
+        "creator": "林一二",
+        "modified": "20220919022615897",
+        "modifier": "林一二",
+        "tags": "$:/tags/Stylesheet",
+        "type": "text/vnd.tiddlywiki",
+        "text": "/* TW-version added to site title */\r\n.tc-site-title:before {\r\n  content:\"TW <<version>>\";\r\n  position:absolute;\r\n  margin-top:-1.9em;\r\n  color:silver;\r\n  font-size:13px;\r\n}"
+    }
+]

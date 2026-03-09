@@ -1,0 +1,9 @@
+[
+    {
+        "title": "$:/plugins/kookma/utility/snippets/wikitext-example-transclude",
+        "caption": "Wikitext-example transclude",
+        "tags": "$:/tags/TextEditor/Snippet",
+        "type": "text/vnd.tiddlywiki",
+        "text": "<$transclude $variable=\"wikitext-example\" \r\nsrc=\"\"\"\r\n\"\"\"/>"
+    }
+]

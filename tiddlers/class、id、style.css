@@ -1,0 +1,19 @@
+<style>
+	.type-code { /* 类名：type-code */
+		color: #e74c3c;
+		background: #f8f9fa;
+		padding: 2px 6px;
+		border-radius: 3px;
+	}
+</style>
+这样定义了一个style，可以在后续作为属性调用如
+<span class="type-code">application/json</span>
+
+
+id则可以标记一行代码，后续可以凭借id找到此处，如
+<h2 id="dev-types">一、开发者相关类型</h2>
+<a href="#dev-types">跳转到开发者类型</a>
+
+
+直接把系统自带格式写在行内就是style如：
+<span style="color: blue; font-weight: bold; font-size: 16px;">

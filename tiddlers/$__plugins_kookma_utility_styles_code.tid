@@ -1,0 +1,8 @@
+[
+    {
+        "title": "$:/plugins/kookma/utility/styles/code",
+        "tags": "$:/tags/Stylesheet",
+        "type": "text/vnd.tiddlywiki",
+        "text": "div.kk-utility-code {\r\n\tposition: relative;\r\n}\r\ndiv.kk-utility-code > button.tc-btn-invisible {\r\n\tposition: absolute;\r\n\tright: 0;\r\n\tpadding: 0.1em 0.2em;\r\n\topacity: 0.3;\r\n}\r\ndiv.kk-utility-code > button.tc-btn-invisible:hover {\r\n\ttransition: opacity 150ms ease-in-out;\r\n\topacity: 1;\r\n}\r\ndiv.kk-utility-code > button.tc-btn-invisible svg {\r\n\twidth: 1.2em;\r\n\theight: 1.2em;\r\n}\r\n/* code caption*/\r\n.kk-utility-code-caption{\r\n\tbackground: <<color pre-background>>;\r\n\tborder: solid 1px <<color pre-border>>;\r\n\tborder-bottom: unset;\r\n\tpadding: 0.3em 0.5em;\r\n\tborder-radius: 3px 3px 0 0;\r\n}\r\n.kk-utility-code-caption:empty{\r\n\tdisplay:none;\r\n}\r\n.kk-utility-code-caption + div.kk-utility-code > pre {\r\n\tborder-radius: 0 0 3px 3px;\r\n\tmargin-top: 0em;}\r\n/*\r\nConsider changing this rule: It hides the copy-button when\r\nin a tiddler the code-body field is set to yes \r\nThis may causes unwanted results. \t \r\n*/\r\ndiv.tc-tiddler-body > div > div > button.tc-btn-invisible{\r\n\tdisplay:none;\r\n}"
+    }
+]

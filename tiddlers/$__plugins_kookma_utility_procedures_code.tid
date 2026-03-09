@@ -1,0 +1,8 @@
+[
+    {
+        "title": "$:/plugins/kookma/utility/procedures/code",
+        "tags": "$:/tags/Global",
+        "type": "text/vnd.tiddlywiki",
+        "text": "\\procedure code(src:\"\", language:\"xml\", caption:\"\")\r\n<$let code={{{  [<src>is[tiddler]get[text]]  [<src>is[blank]then{!!text}else<src>] }}} >\r\n\t\t\t<$codeblock language=<<language>> code=<<code>> caption=<<caption>> />\r\n</$let>\r\n\\end code\n\n\r\n<!--Deprecated\r\nThis is only for backward compatibility (Utility 3.0.2 and older) and will removed in future release\r\n-->"
+    }
+]

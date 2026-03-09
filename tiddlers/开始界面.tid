@@ -1,0 +1,15 @@
+created: 20251108031011346
+creator: LanHao
+modified: 20251108031022057
+modifier: LanHao
+title: 开始界面
+type: text/vnd.tiddlywiki-multiple
+
+<$macrocall
+	$name="toc-tabbed-external-nav"
+	tag="使用教程"
+	selectedTiddler="$:/temp/toc/selectedTiddler/使用教程"
+	unselectedText="<p>在目录中选择一个主题。点击箭头展开主题。</p>"
+	missingText="<p>失踪的条目。</p>"
+/>
+

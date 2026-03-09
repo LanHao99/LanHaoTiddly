@@ -1,0 +1,6 @@
+tags: 使用教程
+title: taddler内容类型
+type: text/vnd.tiddlywiki
+wysiwyg: yes
+
+貌似默认会渲染为wikitext

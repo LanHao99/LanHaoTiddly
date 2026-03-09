@@ -1,0 +1,8 @@
+[
+    {
+        "title": "$:/plugins/kookma/utility/procedures/wikitext-example",
+        "tags": "$:/tags/Global",
+        "type": "text/vnd.tiddlywiki",
+        "text": "\\procedure wikitext-example(src)\r\n<div class=\"doc-example\">\r\n\t<$codeblock code=<<src>>/>\r\n\t<p>That renders as:</p>\r\n\t<$transclude $variable=\"src\" $mode=\"block\"/>\r\n</div>\r\n\\end\n\n\\procedure wikitext-example-with-html(src)\r\n<div class=\"doc-example\">\r\n\t<$codeblock code=<<src>>/>\r\n\t<p>That renders as:</p>\r\n\t<$transclude $variable=\"src\" $mode=\"block\"/>\r\n\t<p>  ... and the underlying HTML is:</p>\r\n\t<$wikify name=\"html\" text=<<src>> output=\"html\">\r\n\t\t<$codeblock code=<<html>>/>\r\n\t</$wikify>\r\n</div>\r\n\\end\n\n<!--\r\nCredit: Jeremy Ruston TiddlyWiki 5.3.5\r\nThe wiki-text examples are set of procedures for documenting TW codes.\r\nI changed the name here, so the procedures name are different if compared to original TiddlyWiki\r\n-->"
+    }
+]

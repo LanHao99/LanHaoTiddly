@@ -1,0 +1,9 @@
+[
+    {
+        "title": "$:/plugins/kookma/utility/customize-ui/actions",
+        "key": "((customize-ui))",
+        "tags": "$:/tags/KeyboardShortcut",
+        "type": "text/vnd.tiddlywiki",
+        "text": "<$action-sendmessage $message=\"tm-modal\" $param=\"$:/plugins/kookma/utility/customize-ui/modal\" />"
+    }
+]
