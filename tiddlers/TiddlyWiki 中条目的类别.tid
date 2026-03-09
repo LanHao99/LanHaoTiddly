@@ -1,3 +1,7 @@
+created: 20260309015714111
+creator: Gu Runjing
+modified: 20260309015733192
+modifier: Gu Runjing
 tags: 使用教程
 title: TiddlyWiki 中条目的类别
 type: text/vnd.tiddlywiki-multiple
@@ -25,4 +29,5 @@ type: text/vnd.tiddlywiki-multiple
 * 搜索「默认条目」
 ** Shadows 选项卡。（字体未加粗的链接，表示该条目已被同名的用户条目所改写）
 
+服了，为什么保存不了？
 @@
