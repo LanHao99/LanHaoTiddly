@@ -1,0 +1,15 @@
+tags: WebGAL 编程语法 WebGAL脚本参考 WebGAL命令
+title: WebGAL 命令 showVars
+type: text/vnd.tiddlywiki
+
+''来源：'' script-reference/commands/showVars.md
+
+在对话框中，显示所有本地变量与全局变量的值。
+
+!! 语句内容
+
+不需要填写任何内容。
+
+{{{
+showVars;
+}}}

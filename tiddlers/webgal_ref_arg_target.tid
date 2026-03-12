@@ -1,0 +1,17 @@
+tags: WebGAL 编程语法 WebGAL脚本参考 WebGAL参数
+title: WebGAL 参数 target
+type: text/vnd.tiddlywiki
+
+''来源：'' script-reference/arguments/target.md
+
+* 字符串
+
+动画作用目标。
+
+可以填写的目标有:
+* <code>fig-center</code>：中间立绘
+* <code>fig-left</code>：左侧立绘
+* <code>fig-right</code>：右侧立绘
+* 自由立绘的 id
+* <code>bg-main</code>：背景
+* <code>stage-main</code>：舞台

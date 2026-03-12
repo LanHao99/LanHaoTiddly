@@ -1,0 +1,10 @@
+tags: WebGAL 编程语法 WebGAL脚本参考 WebGAL参数
+title: WebGAL 参数 writeDefault
+type: text/vnd.tiddlywiki
+
+''来源：'' script-reference/arguments/writeDefault.md
+
+* 布尔值
+
+当值为 <code>true</code> 时，未被赋值的[[变换与效果|WebGAL 变换效果参考]]属性都会写入默认值。
+当值为 <code>false</code> 时，未被赋值的属性会继承现有的值。

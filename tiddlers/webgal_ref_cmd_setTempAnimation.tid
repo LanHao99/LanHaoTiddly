@@ -1,0 +1,44 @@
+tags: WebGAL 编程语法 WebGAL脚本参考 WebGAL命令
+title: WebGAL 命令 setTempAnimation
+type: text/vnd.tiddlywiki
+
+''来源：'' script-reference/commands/setTempAnimation.md
+
+设置临时动画。
+
+!! 语句内容
+
+与 <code>setAnimation</code> 读取动画文件不同，<code>setTempAnimation</code> 允许用户直接在代码里定义多段动画，详见[[动画参考|WebGAL 动画参考]]。
+语句内容格式为动画文件的单行形式，即 <code>[{},{},{}]</code> 。
+
+''说明：''
+如果您想复用动画，请使用 [[setAnimation|WebGAL 命令 setAnimation]] 命令。
+如果您只想设置单段动画，请使用 [[setTransform|WebGAL 命令 setTransform]] 命令。
+
+{{{
+changeFigure:1/open_eyes.png -id=aaa;
+; 闪光弹动画
+setTempAnimation:[{"duration":0},{"brightness":2,"contrast":0,"duration":200,"ease":"circIn"},{"brightness":1,"contrast":1,"duration":200},{"brightness":2,"contrast":0,"duration":200,"ease":"circIn"},{"brightness":1,"contrast":1,"duration":2500}] -target=aaa;
+}}}
+
+!! 参数
+
+{{{
+changeFigure:1/open_eyes.png -id=aaa;
+setTempAnimation:[{"duration":0},{"brightness":2,"contrast":0,"duration":200,"ease":"circIn"},{"brightness":1,"contrast":1,"duration":200},{"brightness":2,"contrast":0,"duration":200,"ease":"circIn"},{"brightness":1,"contrast":1,"duration":2500}] -target=aaa;
+}}}
+
+{{{
+changeFigure:1/open_eyes.png -id=aaa;
+setTempAnimation:[{"duration":0},{"brightness":2,"contrast":0,"duration":200,"ease":"circIn"},{"brightness":1,"contrast":1,"duration":200},{"brightness":2,"contrast":0,"duration":200,"ease":"circIn"},{"brightness":1,"contrast":1,"duration":2500}] -target=aaa -writeDefault;
+}}}
+
+{{{
+changeFigure:1/open_eyes.png -id=aaa;
+setTempAnimation:[{"duration":0},{"scale":{"x":2,"y":2},"duration":10000}] -target=aaa -keep -next;
+角色A: 第一句话;
+角色A: 第二句话;
+角色A: 第三句话;
+; 这会打断 aaa 的跨语句动画，并播放新动画
+setTempAnimation:[{"duration":0},{"scale":{"x":1,"y":1},"duration":10000}] -target=aaa -keep -next;
+}}}

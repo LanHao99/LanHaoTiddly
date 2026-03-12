@@ -1,0 +1,17 @@
+tags: WebGAL 编程语法 WebGAL脚本参考 WebGAL命令
+title: WebGAL 命令 filmMode
+type: text/vnd.tiddlywiki
+
+''来源：'' script-reference/commands/filmMode.md
+
+开启和关闭电影模式的二合一命令。
+
+!! 语句内容
+
+当不填写或填写 <code>none</code> 时，关闭电影模式。其他任何字符串均表示开启电影模式。
+
+{{{
+filmMode:on;
+角色A:真相只有一个;
+filmMode:none;
+}}}

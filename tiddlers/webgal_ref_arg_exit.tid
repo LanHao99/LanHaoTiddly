@@ -1,0 +1,9 @@
+tags: WebGAL 编程语法 WebGAL脚本参考 WebGAL参数
+title: WebGAL 参数 exit
+type: text/vnd.tiddlywiki
+
+''来源：'' script-reference/arguments/exit.md
+
+* 字符串
+
+填写动画名称，对象退场时将播放该动画，顶替默认的透明度淡出的退场动画。

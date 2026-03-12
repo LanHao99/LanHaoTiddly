@@ -1,0 +1,31 @@
+tags: WebGAL 编程语法 WebGAL脚本参考 WebGAL命令
+title: WebGAL 命令 setComplexAnimation
+type: text/vnd.tiddlywiki
+
+''来源：'' script-reference/commands/setComplexAnimation.md
+
+设置复杂动画。
+
+!! 语句内容
+
+填写复杂动画的名称。
+
+目前 WebGAL 提供的复杂动画有：
+* <code>universalSoftIn</code>：通用透明度淡入
+* <code>universalSoftOff</code>：通用透明度淡出
+
+{{{
+setComplexAnimation:universalSoftIn -target=aaa -duration=1000;
+}}}
+
+!! 参数
+
+{{{
+setComplexAnimation:universalSoftIn -target=fig-center -duration=1000;
+}}}
+
+作用于复杂动画的持续时间。
+
+{{{
+setComplexAnimation:universalSoftIn -target=fig-center -duration=1000;
+}}}

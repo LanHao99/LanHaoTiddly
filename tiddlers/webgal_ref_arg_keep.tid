@@ -1,0 +1,10 @@
+tags: WebGAL 编程语法 WebGAL脚本参考 WebGAL参数
+title: WebGAL 参数 keep
+type: text/vnd.tiddlywiki
+
+''来源：'' script-reference/arguments/keep.md
+
+* 布尔值
+
+将该动画转换为跨语句动画。在执行接下来的语句的同时，保持播放当前动画，直至动画结束，或被下一个同目标的 <code>setTransform</code> <code>setAnimation</code> <code>setTempAnimation</code> 打断。
+通常需要配合 <code>next</code> 参数一起使用。

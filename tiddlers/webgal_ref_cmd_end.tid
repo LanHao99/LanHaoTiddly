@@ -1,0 +1,14 @@
+tags: WebGAL 编程语法 WebGAL脚本参考 WebGAL命令
+title: WebGAL 命令 end
+type: text/vnd.tiddlywiki
+
+''来源：'' script-reference/commands/end.md
+
+结束当前场景并返回标题页。
+
+!! 语句内容
+不需要填写任何内容。
+
+{{{
+end;
+}}}

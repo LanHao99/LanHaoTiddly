@@ -1,0 +1,73 @@
+created: 20260312000000000
+draft.of: 墨屉插件卡片创建机制
+draft.title: 墨屉插件卡片创建机制
+modified: 20260312125245247
+modifier: LanHao
+tags: Tidme TW5
+title: Draft of '墨屉插件卡片创建机制' by LanHao
+type: text/vnd.tiddlywiki
+
+!! 结论
+
+墨屉（Tidme）在这个仓库里主要是“创建牌组（Deck tiddler）”，而不是先批量创建独立卡片条目。
+
+- 牌组条目通常位于 `$:/Deck/...`，并以 `card` 字段保存“卡片筛选条件”（filter）。
+- 真正参与学习的“卡片”是被 `card` 过滤器选中的现有 tiddler。
+- 开始学习时会创建/更新一个 `.../study` 临时学习条目，而不是复制出一份新卡片。
+
+!! 关键创建入口
+
+!!! 1) 创建新牌组
+
+在 Deck 列表页中，通过如下动作创建：
+
+```tid
+<$action-createtiddler
+    $basetitle="$:/Deck/new"
+    $template="$:/Deck/default"
+    caption=""
+    description=""
+/>
+```
+
+这一步创建的是“牌组配置 tiddler”。
+
+!!! 2) 导入阅读资源时创建阅读牌组
+
+`tidme/read` 会创建 `$:/Deck/read/...` 形式的牌组：
+
+```tid
+<$action-createtiddler
+    $basetitle={{{ [[$:/Deck/read/]addsuffix<title>] }}}
+    $template="$:/Deck/default"
+    $overwrite="yes"
+    card=<<card>>
+    ...
+/>
+```
+
+这里同样是建牌组，并把 `card` 过滤器写进去。
+
+!!! 3) 开始学习时创建 study 条目
+
+开始学习按钮会把下一个要学的卡片写入：
+
+- 目标条目：`$:/Deck/<牌组>/study`
+- 写入字段：`list`（保存下一张卡/当前学习序列）
+
+这属于学习会话状态，不是新建业务卡片。
+
+!! 默认牌组与卡片来源
+
+默认模板 `$:/Deck/default` 的关键字段：
+
+- `card`: 哪些 tiddler 作为卡片
+- `card_exclude`: 排除哪些卡片
+- `card_unfold`: 学习时展开规则
+- `state_learn`/`state_due`/`state_new`: 各状态筛选
+
+因此，墨屉“创建卡片”的本质是：
+
+1. 创建一个 Deck 配置条目；
+2. 用 Deck 的 `card` 过滤器动态选择现有 tiddler 作为卡片；
+3. 学习过程通过 `.../study` 条目维护会话状态。

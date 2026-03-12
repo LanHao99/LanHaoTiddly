@@ -1,0 +1,11 @@
+tags: WebGAL 编程语法 WebGAL脚本参考 WebGAL参数
+title: WebGAL 参数 duration
+type: text/vnd.tiddlywiki
+
+''来源：'' script-reference/arguments/duration.md
+
+* 数字
+* 范围：0 到正无穷
+* 单位：毫秒
+
+动画的持续时间。

@@ -1,0 +1,16 @@
+tags: WebGAL 编程语法 WebGAL脚本参考 WebGAL命令
+title: WebGAL 命令 label
+type: text/vnd.tiddlywiki
+
+''来源：'' script-reference/commands/label.md
+
+设置标签。
+详情请见[[标签跳转|WebGAL 脚本场景与分支]]。
+
+!! 语句内容
+
+填写标签名称。该命令本身不执行任何操作，但可以配合 <code>choose</code> 和 <code>jumpLabel</code> 使用。
+
+{{{
+label:myLabel;
+}}}

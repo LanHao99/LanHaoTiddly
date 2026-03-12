@@ -1,0 +1,12 @@
+tags: WebGAL 编程语法 WebGAL脚本参考 WebGAL参数
+title: WebGAL 参数 transform
+type: text/vnd.tiddlywiki
+
+''来源：'' script-reference/arguments/transform.md
+
+* 字符串
+
+填写 json 字符串，控制舞台对象的变换与效果。详情请见 [[变换效果参考|WebGAL 变换效果参考]] 。
+
+''注意：''
+此参数仅在对象入场，或替换对象时生效。如果需要修改在场对象的变换效果，请使用 <code>setTransform</code>、<code>setAnimation</code>、<code>setTempAnimation</code> 等命令。

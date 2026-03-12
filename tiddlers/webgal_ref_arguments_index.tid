@@ -1,0 +1,17 @@
+tags: WebGAL 编程语法 WebGAL脚本参考 WebGAL参数
+title: WebGAL 参数参考索引
+type: text/vnd.tiddlywiki
+
+* [[WebGAL 参数 duration]]
+* [[WebGAL 参数 ease]]
+* [[WebGAL 参数 enter]]
+* [[WebGAL 参数 exit]]
+* [[WebGAL 参数 keep]]
+* [[WebGAL 参数 name-bgm]]
+* [[WebGAL 参数 name-cg]]
+* [[WebGAL 参数 series-bgm]]
+* [[WebGAL 参数 series-cg]]
+* [[WebGAL 参数 target]]
+* [[WebGAL 参数 transform]]
+* [[WebGAL 参数 volume]]
+* [[WebGAL 参数 writeDefault]]

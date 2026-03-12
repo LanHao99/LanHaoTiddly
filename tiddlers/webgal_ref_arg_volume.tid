@@ -1,0 +1,11 @@
+tags: WebGAL 编程语法 WebGAL脚本参考 WebGAL参数
+title: WebGAL 参数 volume
+type: text/vnd.tiddlywiki
+
+''来源：'' script-reference/arguments/volume.md
+
+* 数字
+* 范围：0 到 100
+* 默认值：100
+
+音乐音量百分比。

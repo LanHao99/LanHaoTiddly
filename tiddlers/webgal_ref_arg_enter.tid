@@ -1,0 +1,9 @@
+tags: WebGAL 编程语法 WebGAL脚本参考 WebGAL参数
+title: WebGAL 参数 enter
+type: text/vnd.tiddlywiki
+
+''来源：'' script-reference/arguments/enter.md
+
+* 字符串
+
+填写动画名称，对象出场时将播放该动画，顶替默认的透明度淡入的入场动画。

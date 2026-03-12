@@ -1,0 +1,16 @@
+tags: WebGAL 编程语法 使用教程 WebGAL脚本教程
+title: WebGAL 脚本视频
+type: text/vnd.tiddlywiki
+
+''来源：'' webgal-script/video.md
+
+!! 播放视频
+
+把视频放在 <code>video</code> 文件夹内，然后使用 <code>playVideo</code> 播放。
+
+{{{
+playVideo:OP.mp4;
+}}}
+
+如果要阻止用户跳过视频，你可以使用 <code>-skipOff</code> 参数。
+
