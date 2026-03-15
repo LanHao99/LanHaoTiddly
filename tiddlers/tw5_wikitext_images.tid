@@ -1,0 +1,44 @@
+created: 20260312000000000
+modified: 20260312000000000
+tags: WikiText语法 TW5 闪卡填空
+title: TW5 WikiText 图片
+type: text/vnd.tiddlywiki
+
+!! 基本语法
+
+```
+[img[图片URL或条目标题]]
+[img[提示文字|图片URL或条目标题]]
+```
+
+!! 设置尺寸与 CSS 类
+
+```
+[img width=32 [图片.png]]
+[img width=200 height=100 [图片.png]]
+[img class="tc-image" [图片.png]]
+```
+
+!! 属性支持嵌入/变量
+
+```
+[img width={{!!mywidth}} class=<<image-classes>> [图片.png]]
+```
+
+!! 通过嵌入显示图片（无法控制尺寸）
+
+```
+{{图片条目标题}}
+```
+
+!! 图片作为链接点击区域
+
+```
+<$link to="目标条目">{{$:/core/icon}}</$link>
+```
+
+!! 导入图片
+
+* 工具栏 → 工具 → 导入 → 选择图片文件
+* 直接拖放图片到编辑器中（TW5 <<C v5.2.0 id:"ver">>+）
+* 图片作为独立条目存储，可通过条目标题引用

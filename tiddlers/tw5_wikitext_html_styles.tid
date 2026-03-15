@@ -1,0 +1,45 @@
+created: 20260312000000000
+modified: 20260312000000000
+tags: WikiText语法 TW5 闪卡填空
+title: TW5 WikiText HTML与样式
+type: text/vnd.tiddlywiki
+
+!! 直接使用 HTML 标签
+
+TiddlyWiki 直接渲染 HTML，标签内仍可写 WikiText：
+
+```
+<div class="myBox">
+可以写 ''WikiText'' 格式
+</div>
+
+<span style="color:red">红色文字</span>
+```
+
+!! 内联样式 `@@...@@`
+
+```
+@@color:red;font-weight:bold;红色粗体段落@@
+```
+
+多个 CSS 属性用分号分隔，紧跟在 `@@` 之后，以 `;` 结束属性声明部分。
+
+!! CSS 类 `@@.类名`
+
+```
+@@.myClass
+带自定义类的段落
+@@
+```
+
+!! 常用内置工具类
+
+| 类名 | 效果 |h
+| `tc-big-quote` | 超大装饰引号（用于引述块）|
+| `tc-tiddler-frame` | 条目外框样式 |
+| `tc-image-button` | 图标按钮样式 |
+
+!! 注意
+
+* HTML 中的 `<script>` 标签受安全限制，不会执行
+* 块级 HTML 标签（`<div>`）前后需<<C 空行 id:"bl">>，否则可能进入<<C 内联解析模式 id:"inl">>

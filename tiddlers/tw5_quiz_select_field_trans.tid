@@ -1,0 +1,14 @@
+created: 20260312000000000
+modified: 20260312000000000
+tags: WikiText语法 TW5 闪卡选择
+title: WikiText 选择：嵌入字段
+type: text/vnd.tiddlywiki
+
+如何嵌入当前条目的 `caption` 字段的值？
+
+<<S """
+{{!!caption}}
+{{caption}}
+[[caption]]
+<<caption>>
+""" A>>

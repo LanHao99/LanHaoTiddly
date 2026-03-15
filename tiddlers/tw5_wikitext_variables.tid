@@ -1,0 +1,43 @@
+created: 20260312000000000
+modified: 20260312000000000
+tags: WikiText语法 TW5 闪卡填空
+title: TW5 WikiText 变量与过程
+type: text/vnd.tiddlywiki
+
+!! 变量定义（`\define` / `\procedure`）
+
+```
+\define myVar() 变量的值
+\procedure greet(name)
+你好，<<name>>！
+\end
+```
+
+`\define` 是旧语法，`\procedure`（TW5 <<C 5.3 id:"ver">>+）是推荐写法。
+
+!! 调用变量
+
+```
+<<myVar>>
+<<greet "世界">>
+```
+
+!! 设置变量（局部作用域）
+
+```
+<$let x="100">
+当前 x = <<x>>
+</$let>
+```
+
+!! 预置变量
+
+| 变量名 | 含义 |h
+| `currentTiddler` | 当前渲染中的条目标题 |
+| `now` | 当前时间（UTC 格式）|
+| `revisionNumber` | 条目当前修订号 |
+
+!! 注意
+
+* 变量在用 `\define`/`\procedure` 定义后，对后续同级及子级内容可见
+* 过程（procedure）支持参数默认值：`\procedure greet(name:"访客")`

@@ -1,0 +1,55 @@
+created: 20260312000000000
+modified: 20260312000000000
+tags: WikiText语法 TW5 闪卡填空
+title: TW5 WikiText 条件与过滤器语法
+type: text/vnd.tiddlywiki
+
+!! 条件快捷语法（5.3+）
+
+```
+<% if [过滤器] %>
+  条件成立时的内容
+<% elseif [另一个过滤器] %>
+  第二条件
+<% else %>
+  兜底内容
+<% endif %>
+```
+
+!! if 判断示例
+
+```
+<% if [{!!draft.of}] %>
+  这是草稿
+<% else %>
+  这是正式条目
+<% endif %>
+```
+
+!! 过滤器基础语法
+
+```
+[all[tiddlers]]                    ← 所有条目
+[tag[WebGAL]]                      ← 带指定标签的条目
+[title[TW5 WikiText 格式化]]       ← 指定标题的条目
+[field:creator[LanHao]]            ← 指定字段值
+[search[关键词]]                   ← 全文搜索
+[sort[title]]                      ← 按标题排序
+[limit[10]]                        ← 限制数量
+```
+
+!! 多步过滤器（串联）
+
+```
+[tag[WikiText语法]sort[title]limit[5]]
+```
+
+步骤从左到右依次执行，后一步在前一步结果基础上操作。
+
+!! 过滤器在属性中使用
+
+```
+<$list filter="[tag[WikiText语法]]">
+  <<currentTiddler>>
+</$list>
+```

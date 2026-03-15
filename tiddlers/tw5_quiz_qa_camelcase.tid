@@ -1,0 +1,17 @@
+caption: CamelCase 自动链接是什么？如何抑制它？
+created: 20260312000000000
+modified: 20260312000000000
+tags: WikiText语法 TW5 闪卡问答
+title: WikiText 问答：CamelCase 链接抑制
+type: text/vnd.tiddlywiki
+
+''CamelCase 自动链接''：符合驼峰命名规则（含多个大写字母开头的单词连写）的词会被 TiddlyWiki 自动识别为条目链接，如 `HelloThere`。
+
+''抑制方法''：在词前加 `~` 前缀：
+
+```
+~HelloThere        → 显示为纯文本，不变成链接
+~http://google.com → 同样不变成链接
+```
+
+`~` 只影响紧随其后的一个词/URL。

@@ -1,0 +1,15 @@
+caption: 写出 TiddlyWiki 表格的 caption、CSS 类、header、footer 伪行语法
+created: 20260312000000000
+modified: 20260312000000000
+tags: WikiText语法 TW5 闪卡问答
+title: WikiText 问答：表格元信息伪行
+type: text/vnd.tiddlywiki
+
+```
+|myClass|k            ← CSS 类（末尾 k）
+|这是标题|c            ← 表格标题 <caption>（末尾 c）
+|页眉A |页眉B |h      ← <thead>（末尾 h）
+|页脚A |页脚B |f      ← <tfoot>（末尾 f）
+```
+
+记忆口诀：''k-类 / c-标题 / h-头 / f-脚''

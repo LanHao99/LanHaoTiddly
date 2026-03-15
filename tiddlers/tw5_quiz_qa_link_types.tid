@@ -1,0 +1,16 @@
+caption: TiddlyWiki 中 [[链接]] 和 [ext[链接]] 有什么区别？什么时候必须用 [ext[...]]？
+created: 20260312000000000
+modified: 20260312000000000
+tags: WikiText语法 TW5 闪卡问答
+title: WikiText 问答：链接语法对比
+type: text/vnd.tiddlywiki
+
+* `[[文字|目标]]` — 创建内部条目链接（或者自动识别的完整 URL）
+* `[ext[文字|路径]]` — 强制创建外部链接
+
+''必须用 `[ext[...]]` 的情况：''
+
+# 链接到''相对路径文件''（如 `./readme.md`），因为 `[[...]]` 会把相对路径当成条目标题
+# 使用不常见的 URI scheme（如 `bitcoin:`），不会被自动识别
+
+完整 URL（`https://...`）可以用两种语法，但相对路径只能用 `[ext[...]]`。

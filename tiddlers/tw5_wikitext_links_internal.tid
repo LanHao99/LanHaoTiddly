@@ -1,0 +1,41 @@
+created: 20260312000000000
+modified: 20260312000000000
+tags: WikiText语法 TW5 闪卡填空
+title: TW5 WikiText 内部链接
+type: text/vnd.tiddlywiki
+
+!! 基本语法
+
+```
+[[条目标题]]
+[[显示文字|条目标题]]
+```
+
+!! CamelCase 自动链接
+
+符合驼峰命名（含多个大写字母）的词自动变链接。用 `~` 前缀可抑制：
+
+```
+~HelloThere        → 不变成链接
+~http://example.com → 不变成链接
+```
+
+!! 动态链接
+
+链接属性不展开 WikiText，需用部件实现动态目标：
+
+```
+<$link to=<<currentTiddler>>>{{!!caption}}</$link>
+```
+
+!! 锚点链接
+
+```
+<div id="sec1">目标区域</div>
+[[跳转|#sec1]]
+```
+
+!! 提示
+
+* 链接目标<<C 大小写敏感 id:"case">>
+* 通过编辑器工具栏点击链接图标可搜索并插入

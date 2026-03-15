@@ -1,0 +1,14 @@
+created: 20260312000000000
+modified: 20260312000000000
+tags: WikiText语法 TW5 闪卡选择
+title: WikiText 选择：硬换行语法
+type: text/vnd.tiddlywiki
+
+在 TiddlyWiki 中保留多行诗歌的换行，应该用什么包裹？
+
+<<S """
+三反引号 ``` ... ```
+三引号 """ ... """
+三大于号 >>> ... >>>
+花括号 {{{ ... }}}
+""" B>>

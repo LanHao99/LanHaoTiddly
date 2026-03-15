@@ -1,0 +1,14 @@
+created: 20260312000000000
+modified: 20260312000000000
+tags: WikiText语法 TW5 闪卡选择
+title: WikiText 选择：外部链接相对路径
+type: text/vnd.tiddlywiki
+
+在 TiddlyWiki 中链接到相对路径文件，必须使用哪种语法？
+
+<<S """
+[[显示文字|./文件.md]]
+[img[./文件.md]]
+[ext[显示文字|./文件.md]]
+<a href="./文件.md">
+""" C>>

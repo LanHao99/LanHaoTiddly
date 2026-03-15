@@ -1,0 +1,14 @@
+created: 20260312000000000
+modified: 20260312000000000
+tags: WikiText语法 TW5 闪卡选择
+title: WikiText 选择：删除线语法
+type: text/vnd.tiddlywiki
+
+在 TiddlyWiki WikiText 中，删除线使用什么语法？
+
+<<S """
+`--文字--`
+`~~文字~~`
+`^^文字^^`
+`,,文字,,`
+""" B>>

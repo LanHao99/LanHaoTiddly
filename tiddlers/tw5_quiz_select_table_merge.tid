@@ -1,0 +1,14 @@
+created: 20260312000000000
+modified: 20260312000000000
+tags: WikiText语法 TW5 闪卡选择
+title: WikiText 选择：表格合并符号
+type: text/vnd.tiddlywiki
+
+在 TiddlyWiki 表格中，`~` 符号用于什么？
+
+<<S """
+与右侧单元格合并
+与左侧单元格合并
+与上方单元格合并
+删除该单元格
+""" C>>

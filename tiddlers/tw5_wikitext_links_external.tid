@@ -1,0 +1,40 @@
+created: 20260312000000000
+modified: 20260312000000000
+tags: WikiText语法 TW5 闪卡填空
+title: TW5 WikiText 外部链接
+type: text/vnd.tiddlywiki
+
+!! 完整 URL 自动识别
+
+```
+https://tiddlywiki.com/
+```
+
+完整 URL（含<<C 协议前缀 id:"proto">>）会自动变成可点击链接。
+
+!! 带显示文字
+
+```
+[[TW5 官网|https://tiddlywiki.com/]]
+[[发邮件|mailto:me@example.com]]
+```
+
+!! 相对路径（必须用 `[ext[...]]`）
+
+```
+[ext[README|./readme.md]]
+[ext[上级索引|../index.html]]
+```
+
+!! 强制外部链接（避免被识别为条目标题）
+
+```
+[ext[https://tiddlywiki.com]]
+[ext[TW5|https://tiddlywiki.com]]
+[ext[捐赠|bitcoin:1aabb...?amount=0.001]]
+```
+
+!! 提示
+
+* 对于相对路径，普通 `[[...]]` 语法会被当成条目标题而非文件路径，必须用 `[ext[...]]`
+* `[ext[...]]` 同样适用于完整 URL，只是非必须

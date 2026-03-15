@@ -1,0 +1,17 @@
+caption: \define 和 \procedure 有什么区别？哪个是推荐写法？
+created: 20260312000000000
+modified: 20260312000000000
+tags: WikiText语法 TW5 闪卡问答
+title: WikiText 问答：define vs procedure
+type: text/vnd.tiddlywiki
+
+* `\define` — 旧版宏定义语法，存在一些已知陷阱（如参数替换方式）
+* `\procedure`（TW5 5.3+）— 推荐的新写法，替代 `\define`
+
+两者都定义可复用的 WikiText 代码块，但 `\procedure`：
+
+# 支持参数默认值：`\procedure greet(name:"访客")`
+# 内部使用更安全的变量作用域机制
+# 是 TW5 官方未来主推的方向
+
+新项目应统一使用 `\procedure`。

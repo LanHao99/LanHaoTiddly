@@ -1,0 +1,14 @@
+created: 20260312000000000
+modified: 20260312000000000
+tags: WikiText语法 TW5 闪卡选择
+title: WikiText 选择：三重大括号含义
+type: text/vnd.tiddlywiki
+
+在 TiddlyWiki 中，`{{{ [tag[abc]] }}}` 是什么功能？
+
+<<S """
+定义代码块
+嵌入一个条目的内容
+执行过滤器并嵌入所有匹配条目
+定义一段 JSON 数据
+""" C>>

@@ -1,8 +1,11 @@
-created: 20251107060338140
-creator: LanHaoMain
-modified: 20260312125049720
-modifier: LanHao
-title: $:/palette
-type: text/vnd.tiddlywiki
-
-$:/palettes/Nord
+[
+    {
+        "created": "20251107060338140",
+        "creator": "LanHaoMain",
+        "title": "$:/palette",
+        "modified": "20260312140940698",
+        "modifier": "LanHao",
+        "type": "text/vnd.tiddlywiki",
+        "text": "$:/palettes/Nord"
+    }
+]

@@ -1,0 +1,14 @@
+created: 20260312000000000
+modified: 20260312000000000
+tags: WikiText语法 TW5 闪卡选择
+title: WikiText 选择：条件语法版本
+type: text/vnd.tiddlywiki
+
+TiddlyWiki 的 `<% if [filter] %>...<% endif %>` 条件语法从哪个版本开始可用？
+
+<<S """
+5.1
+5.2
+5.3
+5.0
+""" C>>
