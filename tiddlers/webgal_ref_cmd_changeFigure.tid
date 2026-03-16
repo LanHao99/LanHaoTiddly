@@ -10,89 +10,69 @@ type: text/vnd.tiddlywiki
 
 填写立绘的路径。当文件路径为空或为 <code>none</code> 时，表示立绘退场。
 详情请见[[背景与立绘|WebGAL 脚本背景与立绘]]。
-
-{{{
+```
 ; 如果没有立绘存在，则此句表示立绘入场。
 changeFigure:1/open_eyes.png;
 ; 如果已有立绘存在，则此句表示替换立绘。
 changeFigure:2/open_eyes.png;
 ; 如果填写 none 或者不填，则此句表示立绘退场。
 changeFigure:none;
-}}}
-
+```
 如果立绘的路径与 <code>id</code> 保持不变，则不会触发入场或退场动画，而是将新参数应用到目标立绘上。
-
-{{{
+```
 ; Live2d 立绘入场
 changeFigure:character_a/model.json -id=aaa;
 ; 修改 Live2d 立绘的动作表情
 changeFigure:character_a/model.json -id=aaa -motion=smile -expression=sad;
-}}}
-
+```
 目前 WebGAL 支持图片立绘，Live2D 立绘和 Spine 立绘。
 
 !!! 图片立绘
 
 任何不是 Live2D 或 Spine 的格式，都将尝试作为图片立绘导入。
-
-{{{
+```
 changeFigure:1/open_eyes.png;
-}}}
-
+```
 !!! Live2D 立绘
 
 ''说明：''
 使用 Live2D 需要开发者做一些准备工作，本条目仅保留脚本侧用法说明。
 
 填入 Live2D 模型 (.json/.model3.json) 的路径，WebGAL 会加载 Live2D 模型。
-
-{{{
+```
 changeFigure:character_a/model.json;
-}}}
-
+```
 !!! Spine 立绘
 
 ''说明：''
 使用 Spine 需要开发者做一些准备工作，本条目仅保留脚本侧用法说明。
 
 如果您的 Spine 模型是 .skel 格式，您可以直接填写该文件的路径。
-
-{{{
+```
 changeFigure:character_x/model.skel;
-}}}
-
+```
 如果您的 Spine 模型是 .json 格式，您需要在路径后指定立绘类型为 Spine，避免误当作 Live2D 模型导入。
-
-{{{
+```
 changeFigure:character_x/model.json?type=spine;
-}}}
-
+```
 !! 参数
-
-{{{
+```
 changeFigure:1/open_eyes.png -transform={"position":{"x":-50,"y":-20},"rotation":0.1,"scale":{"x":1.2,"y":1.2},"brightness":0.5,"blur":10};
-}}}
-
-{{{
+```
+```
 changeFigure:1/open_eyes.png -enter=enter-from-left;
-}}}
-
-{{{
+```
+```
 changeFigure:1/open_eyes.png -exit=exit-to-right;
-}}}
-
+```
 作用于默认入场退场动画，默认值为 1000。
-
-{{{
+```
 changeFigure:1/open_eyes.png -duration=200;
-}}}
-
+```
 作用于默认入场退场动画。
-
-{{{
+```
 changeFigure:1/open_eyes.png -ease=easeOut;
-}}}
-
+```
 !!! left
 * 布尔值
 
@@ -101,11 +81,9 @@ changeFigure:1/open_eyes.png -ease=easeOut;
 
 ''注意：''
 此参数仅在立绘出场，或替换立绘时生效。如果需要修改在场立绘的坐标，请使用 <code>setTransform</code>、<code>setAnimation</code>、<code>setTempAnimation</code> 等命令。
-
-{{{
+```
 changeFigure:1/open_eyes.png -left;
-}}}
-
+```
 !!! right
 * 布尔值
 
@@ -114,11 +92,9 @@ changeFigure:1/open_eyes.png -left;
 
 ''注意：''
 此参数仅在立绘出场，或替换立绘时生效。如果需要修改在场立绘的坐标，请使用 <code>setTransform</code>、<code>setAnimation</code>、<code>setTempAnimation</code> 等命令。
-
-{{{
+```
 changeFigure:1/open_eyes.png -right;
-}}}
-
+```
 !!! id
 * 字符串
 
@@ -128,46 +104,38 @@ changeFigure:1/open_eyes.png -right;
 * 若 <code>left</code> 参数为 <code>true</code>，则默认赋予该立绘以 <code>fig-left</code> 的 id
 * 若 <code>right</code> 参数为 <code>true</code>，则默认赋予该立绘以 <code>fig-right</code> 的 id
 * 若 <code>left</code> 和 <code>right</code> 参数均为 <code>false</code>，则默认赋予该立绘以 <code>fig-center</code> 的 id
-
-{{{
+```
 ; 填写了不同 id 后，即使初始位置相同，立绘也不会相互顶替。
 changeFigure:1/open_eyes.png -id=aaa;
 changeFigure:2/open_eyes.png -id=bbb;
 ; 此时 -left -right 仅与初始位置有关，可以与 -id 一起使用。
 changeFigure:3/open_eyes.png -id=ccc -left;
-}}}
-
+```
 !!! zIndex
 * 数字 (整数)
 * 范围: 0 到正无穷
 
 立绘的层级，数值越大，立绘图层越靠上。如果数值相同，则入场较晚的立绘图层会更靠上。
 若不填写该参数，默认值为0。
-
-{{{
+```
 ; 立绘 aaa 会在立绘 bbb 上方。
 changeFigure:1/open_eyes.png -id=aaa -zIndex=2;
 changeFigure:2/open_eyes.png -id=bbb -zIndex=1;
-}}}
-
+```
 !!! clear
 * 布尔值
 
 将语句内容替换为空字符串。
-
-{{{
+```
 changeFigure:1/open_eyes.png -clear;
-}}}
-
+```
 !!! none
 * 布尔值
 
 将语句内容替换为空字符串。
-
-{{{
+```
 changeFigure:1/open_eyes.png -none;
-}}}
-
+```
 !!! animationFlag
 * 字符串
 
@@ -177,67 +145,53 @@ changeFigure:1/open_eyes.png -none;
 * 字符串
 
 填写图片立绘的路径，作为张嘴时的立绘差分。
-
-{{{
+```
 changeFigure:1/open_eyes.png -mouthOpen=1/open_mouth.png;
-}}}
-
+```
 !!! mouthHalfOpen
 * 字符串
 
 填写图片立绘的路径，作为半张嘴时的立绘差分。
-
-{{{
+```
 changeFigure:1/open_eyes.png -mouthHalfOpen=1/halfopen_mouth.png;
-}}}
-
+```
 !!! mouthClose
 * 字符串
 
 填写图片立绘的路径，作为闭嘴时的立绘差分。
-
-{{{
+```
 changeFigure:1/open_eyes.png -mouthClose=1/closed_mouth.png;
-}}}
-
+```
 !!! eyesOpen
 * 字符串
 
 填写图片立绘的路径，作为睁眼时的立绘差分。
-
-{{{
+```
 changeFigure:1/open_eyes.png -eyesOpen=1/open_eyes.png;
-}}}
-
+```
 !!! eyesClose
 * 字符串
 
 填写图片立绘的路径，作为闭眼时的立绘差分。
-
-{{{
+```
 changeFigure:1/open_eyes.png -eyesClose=1/closed_eyes.png;
-}}}
-
+```
 !!! motion
 * 字符串
 
 对于 Live2D 立绘或 Spine 立绘，填写动作名称，播放对应的动作动画。
-
-{{{
+```
 changeFigure:character_a/model.json -motion=sad;
 changeFigure:character_a/model.json -motion=smile;
-}}}
-
+```
 !!! expression
 * 字符串
 
 对于 Live2D 立绘，填写表情名称，切换对应的表情。
-
-{{{
+```
 changeFigure:character_a/model.json -expression=smile;
 changeFigure:character_a/model.json -expression=sad;
-}}}
-
+```
 !!! bounds
 * 字符串
 
@@ -247,12 +201,10 @@ x 轴以向右为正方形向，y 轴以向下为正方向。
 
 ''注意：''
 此参数仅在立绘出场，或替换立绘时生效。
-
-{{{
+```
 ; 往左和往右拓展 300 像素
 changeFigure:character_a/model.json -bounds=-300,0,300,0;
-}}}
-
+```
 !!! blink
 * 字符串
 
@@ -265,11 +217,9 @@ changeFigure:character_a/model.json -bounds=-300,0,300,0;
 * <code>"closingDuration"</code>: 数字，闭眼持续时间，单位毫秒，默认值 100
 * <code>"closedDuration"</code>: 数字，闭眼时间，单位毫秒，默认值 50
 * <code>"openingDuration"</code>: 数字，睁眼持续时间，单位毫秒，默认值 150
-
-{{{
+```
 changeFigure:character_a/model.json -blink={"blinkInterval":5000,"blinkIntervalRandom":2000,"closingDuration":100,"closedDuration":50,"openingDuration":150};
-}}}
-
+```
 !!! focus
 * 字符串
 
@@ -281,7 +231,6 @@ x 轴以向右为正方形向，y 轴以向上为正方向。
 * <code>"x"</code>: 数字，注视点的 x 坐标，范围 -1 到 1，默认值 0
 * <code>"y"</code>: 数字，注视点的 y 坐标，范围 -1 到 1，默认值 0
 * <code>"instant"</code>: 布尔值，是否立即转向注视点，默认值 false
-
-{{{
+```
 changeFigure:character_a/model.json -focus={"x":0.5,"y":0.2,"instant":false};
-}}}
+```

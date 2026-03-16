@@ -12,33 +12,27 @@ type: text/vnd.tiddlywiki
 
 ''说明：''
 此命令只生成一段动画，如果您需要设置多段动画，请使用 [[setAnimation|WebGAL 命令 setAnimation]] 或 [[setTempAnimation|WebGAL 命令 setTempAnimation]] 命令。
-
-{{{
+```
 changeFigure:character_a/normal.png -id=aaa;
 ; 向左移动
 setTransform:{"position":{"x":-500},"saturation":0.8} -target=aaa -duration=500;
 ; 降低亮度
 setTransform:{"brightness":0.5,"contrast":1.2} -target=aaa -duration=500;
-}}}
-
+```
 !! 参数
-
-{{{
+```
 changeFigure:1/open_eyes.png -id=aaa;
 setTransform:{"brightness":0.5} -target=aaa -duration=500;
-}}}
-
-{{{
+```
+```
 changeFigure:1/open_eyes.png -id=aaa;
 setTransform:{"brightness":0.5} -target=aaa -duration=500;
-}}}
-
-{{{
+```
+```
 changeFigure:1/open_eyes.png -id=aaa;
 setTransform:{"brightness":0.5} -target=aaa -duration=500 -writeDefault;
-}}}
-
-{{{
+```
+```
 ; 假设这是一个特别长的动画
 setTransform:{"scale":{"x":2,"y":2}} -target=aaa -duration=10000 -keep;
 角色A: 第一句话;
@@ -46,4 +40,4 @@ setTransform:{"scale":{"x":2,"y":2}} -target=aaa -duration=10000 -keep;
 角色A: 第三句话;
 ; 这会打断 aaa 的跨语句动画，并播放新动画
 setTransform:{"scale":{"x":1,"y":1}} -target=aaa -duration=10000 -keep;
-}}}
+```

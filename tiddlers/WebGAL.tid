@@ -1,0 +1,14 @@
+created: 20260316090203697
+creator: LanHao
+modified: 20260316090601248
+modifier: LanHao
+title: WebGAL
+type: 
+
+<$macrocall
+	$name="toc-tabbed-external-nav"
+	tag="webgal"
+	selectedTiddler="$:/temp/toc/selectedTiddler/webgal"
+	unselectedText="<p>在目录中选择一个主题</p>"
+	missingText="<p>失踪的条目。</p>"
+/>

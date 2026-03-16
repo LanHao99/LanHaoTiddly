@@ -16,20 +16,17 @@ type: text/vnd.tiddlywiki
 * <code>rain</code>：下雨
 * <code>snow</code>：下雪
 * <code>heavySnow</code>：下大雪
-
-{{{
+```
 pixiInit; 初始化舞台特效
 pixiPerform:rain;
 说话者:下雨了。;
 pixiInit; 清除所有舞台特效
 说话者:雨停了。;
-}}}
-
+```
 您可以叠加使用两种不同的舞台特效。
-
-{{{
+```
 pixiInit;
 pixiPerform:rain;
 pixiPerform:snow;
 说话者:雨雪纷飞。;
-}}}
+```

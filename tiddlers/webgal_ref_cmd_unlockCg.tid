@@ -9,23 +9,18 @@ type: text/vnd.tiddlywiki
 !! 语句内容
 
 填写图片的路径。
-
-{{{
+```
 unlockCg:chapter_03/date.png -name=第一次约会;
-}}}
-
+```
 !! 参数
 
 !!! name
 
 若不填写 <code>name</code>，则以图片的路径作为名称。
-
-{{{
+```
 unlockCg:chapter_03/date.png -name=第一次约会;
-}}}
-
+```
 !!! series
-
-{{{
+```
 unlockCg:chapter_03/date.png -name=第一次约会 -series=角色B;
-}}}
+```

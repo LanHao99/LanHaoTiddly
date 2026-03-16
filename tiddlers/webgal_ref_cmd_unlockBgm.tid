@@ -9,23 +9,18 @@ type: text/vnd.tiddlywiki
 !! 语句内容
 
 填写音乐的路径。
-
-{{{
+```
 unlockBgm:school/morning.mp3 -name=学校的早晨;
-}}}
-
+```
 !! 参数
 
 !!! name
 
 若不填写 <code>name</code>，则以音乐的路径作为名称。
-
-{{{
+```
 unlockBgm:school/morning.mp3 -name=学校的早晨;
-}}}
-
+```
 !!! series
-
-{{{
+```
 unlockBgm:school/morning.mp3 -name=早晨 -series=学校;
-}}}
+```

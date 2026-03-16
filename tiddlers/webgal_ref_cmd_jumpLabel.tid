@@ -10,8 +10,7 @@ type: text/vnd.tiddlywiki
 !! 语句内容
 
 填写要跳转的目标标签名称。
-
-{{{
+```
 label:think;
 ;
 角色A:我记得她好像喜欢......;
@@ -23,4 +22,4 @@ jumpLabel:think;
 ;
 label:correct;
 角色A:对，是兔子玩偶。;
-}}}
+```

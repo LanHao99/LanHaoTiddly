@@ -10,34 +10,29 @@ type: text/vnd.tiddlywiki
 
 不需要填写任何语句内容。
 详情请见[[设置进出场效果|WebGAL 脚本动画效果]]。
-
-{{{
+```
 changeFigure:1/open_eyes.png -id=aaa -next;
 setTransition: -target=aaa -enter=enter-from-left;
 角色A: 你好！
 setTransition: -target=aaa -exit=exit-to-right;
 changeFigure:none -id=aaa -next;
 角色A: 再见！
-}}}
-
+```
 !! 参数
-
-{{{
+```
 changeFigure:1/open_eyes.png -id=aaa -next;
 setTransition: -target=aaa -enter=enter-from-left;
 角色A: 你好！
-}}}
-
-{{{
+```
+```
 changeFigure:1/open_eyes.png -id=aaa -next;
 setTransition: -target=aaa -enter=enter-from-left;
 角色A: 你好！
-}}}
-
-{{{
+```
+```
 changeFigure:1/open_eyes.png -id=aaa -next;
 角色A: 你好！
 setTransition: -target=aaa -exit=exit-to-right;
 changeFigure:none -id=aaa -next;
 角色A: 再见！
-}}}
+```

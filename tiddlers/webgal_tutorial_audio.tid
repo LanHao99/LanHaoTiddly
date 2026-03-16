@@ -7,29 +7,21 @@ type: text/vnd.tiddlywiki
 !! 播放背景音乐（BGM）
 
 播放背景音乐的方法极其简单，你只需要将背景音乐放置在 <code>bgm</code> 文件夹下，然后使用 <code>bgm</code> 指令来播放背景音乐。
-
-{{{
+```
 bgm:夏影.mp3;
-}}}
-
+```
 可以为背景音乐设置一个 <code>-volume</code> 参数，来调整它的音量。
-
-{{{
+```
 bgm:夏影.mp3 -volume=30;
-}}}
-
+```
 此外，还可以使用 <code>-enter</code> 参数，进行淡入播放。
-
-{{{
+```
 bgm:夏影.mp3 -enter=3000;
-}}}
-
+```
 最后，可以使用以下语句，进行背景音乐的淡出。
-
-{{{
+```
 bgm:none -enter=3000;
-}}}
-
+```
 ''提示：''
 <code>-volume</code> 和 <code>-enter</code> 都是可选参数。
 <code>-volume</code> 未使用时，或使用了 0 ~ 100 以外的值时，将使用默认值 100。
@@ -38,24 +30,18 @@ bgm:none -enter=3000;
 !! 播放语音
 
 众所周知，视觉小说 最吸引人的地方往往在于其有优秀的配音。将配音文件放入 <code>vocal</code> 文件夹，然后在对话脚本中加入 <code>-语音文件名</code> 参数，就可以播放语音了。语法示例如下。
-
-{{{
+```
 比企谷八幡:刚到而已 -V3.ogg;
-}}}
-
+```
 在连续对话时，语音的引入方式也是一样的。
-
-{{{
+```
 雪之下雪乃:你到得真早 -V1.ogg;
 对不起，等很久了吗？ -V2.ogg;
-}}}
-
+```
 同时可以设置一个 <code>-volume</code> 参数，来调整它的音量。
-
-{{{
+```
 比企谷八幡:刚到而已 -V3.ogg -volume=30;
-}}}
-
+```
 ''提示：''
 <code>-volume</code> 是可选参数。
 <code>-volume</code> 未设置时，或使用了 0 ~ 100 以外的值时，将使用默认值 100。
@@ -63,17 +49,13 @@ bgm:none -enter=3000;
 !! 播放效果音
 
 将你的配音放入 <code>vocal</code> 文件夹之后，再使用 <code>playEffect</code> 指令就可以播放效果音了^_^
-
-{{{
+```
 playEffect:xxx.mp3;
-}}}
-
+```
 可以为效果音设置一个 <code>-volume</code> 参数，来调整它的音量。
-
-{{{
+```
 playEffect:xxx.mp3 -volume=30;
-}}}
-
+```
 ''提示：''
 <code>-volume</code> 是可选参数。
 <code>-volume</code> 未设置时，或使用了 0 ~ 100 以外的值时，将使用默认值 100。
@@ -81,17 +63,14 @@ playEffect:xxx.mp3 -volume=30;
 !!! 效果音循环
 
 为效果音赋予一个 <code>id</code> 将会自动启用效果音循环，后续使用相同的 <code>id</code> 来停止。
-
-{{{
+```
 playEffect:xxx.mp3 -id=xxx;
 playEffect:none -id=xxx; // 停止这个循环的效果音
-}}}
-
+```
 !! 解锁音频以供鉴赏
 
 使用 <code>unlockBgm</code> 解锁音频鉴赏中的音频。
-
-{{{
+```
 ; // 解锁bgm并赋予名称
 unlockBgm:s_Title.mp3 -name=Smiling-Swinging!!!;
-}}}
+```

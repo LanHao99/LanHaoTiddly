@@ -16,11 +16,10 @@ type: text/vnd.tiddlywiki
 如果用 <code>setTextbox</code> 显示对话框，但是对话框仍然没有出现，可能是因为以下情况：
 * 说话内容与角色名均为空
 * 开启了 ''隐藏所有 UI''
-
-{{{
+```
 角色A:带你去一个地方。;
 setTextbox:hide;
 changeBg:shop.png;
 setTextbox:show;
 角色A:我们到了。;
-}}}
+```

@@ -10,7 +10,6 @@ type: text/vnd.tiddlywiki
 !! 语句内容
 
 填写标签名称。该命令本身不执行任何操作，但可以配合 <code>choose</code> 和 <code>jumpLabel</code> 使用。
-
-{{{
+```
 label:myLabel;
-}}}
+```

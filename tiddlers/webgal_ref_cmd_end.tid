@@ -8,7 +8,6 @@ type: text/vnd.tiddlywiki
 
 !! 语句内容
 不需要填写任何内容。
-
-{{{
+```
 end;
-}}}
+```

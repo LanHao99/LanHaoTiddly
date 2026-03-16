@@ -7,10 +7,8 @@ type: text/vnd.tiddlywiki
 !! 播放视频
 
 把视频放在 <code>video</code> 文件夹内，然后使用 <code>playVideo</code> 播放。
-
-{{{
+```
 playVideo:OP.mp4;
-}}}
-
+```
 如果要阻止用户跳过视频，你可以使用 <code>-skipOff</code> 参数。
 

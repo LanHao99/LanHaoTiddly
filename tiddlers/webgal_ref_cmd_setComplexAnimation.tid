@@ -13,19 +13,14 @@ type: text/vnd.tiddlywiki
 目前 WebGAL 提供的复杂动画有：
 * <code>universalSoftIn</code>：通用透明度淡入
 * <code>universalSoftOff</code>：通用透明度淡出
-
-{{{
+```
 setComplexAnimation:universalSoftIn -target=aaa -duration=1000;
-}}}
-
+```
 !! 参数
-
-{{{
+```
 setComplexAnimation:universalSoftIn -target=fig-center -duration=1000;
-}}}
-
+```
 作用于复杂动画的持续时间。
-
-{{{
+```
 setComplexAnimation:universalSoftIn -target=fig-center -duration=1000;
-}}}
+```
